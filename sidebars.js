@@ -31,6 +31,24 @@ const sidebars = {
       collapsed: false,
       items: ['How to Upload Examples'],
     },
+    {
+      type: 'category',
+      label: 'GCP Deployment',
+      collapsed: false,
+      items: ['Deploy Langflow on Google Cloud Platform'],
+    },
+    {
+      type: 'category',
+      label: 'Release Notes',
+      collapsed: false,
+      items: ['Latest Changes'],
+    },
+    {
+      type: 'category',
+      label: 'Contributing',
+      collapsed: false,
+      items: ['How to contribute', 'GitHub Issues', 'Community'],
+    },
     
       ],
     };

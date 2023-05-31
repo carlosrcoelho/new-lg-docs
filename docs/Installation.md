@@ -20,6 +20,8 @@ or
 langflow
 ```
 
+---
+
 ## Run Locally
 
 Run locally by cloning the repository and installing the dependencies. We recommend using a virtual environment to isolate the dependencies from your system.
@@ -43,6 +45,8 @@ cd src/frontend
 npm install
 npm start
 ```
+
+---
 
 ## Docker compose
 

@@ -8,32 +8,28 @@ Component **agents** can refer to an entity that is capable of performing action
 
 If want to learn more about the components and how they work, make sure to check out the LangChain [documentation](https://docs.langchain.com/docs/category/components) section.
 
+---
+
 ## Component's Features
 
 During the flow creation process, you will notice a colored circle. Components marked with a red asterisk * must be connected. If you don't connect it, a red line will appear around it. Make the necessary connections to make your flow work. Hovering over the small circle will reveal the component that needs to be connected.
 
 In some components, at the top of it, you will see a small gear icon ⚙️, which you can click to edit the parameters. You also have the option to delete it by clicking the trash can icon 🗑️.
 
-
-![Component](img/single_node/guideline.png)
+---
 
 ## Features
 
 Located in the right top corner of the screen there are some features that you can use, such as **Code**, **Import**, **Export**, **Dark Mode** and **Notification**, as you can see in the image below:
 
-![Features](img/single_node/features.png)
-
 Further down, we will explain each of these features.
+
+---
 
 ### Code
 
-![Code](img/single_node/code.png)
-
 API Access: Export Your Flow for Code Usage. The API Access feature allows you to export your flow from the platform and utilize it with your own code. This feature provides two different tabs within the platform, the first being the "Python API" tab and the second being the "Python Code" tab. Each tab offers a unique set of functionalities to integrate the exported flow into your codebase seamlessly.
 
-![Description](img/single_node/code.png)
-
-API Access: Export Your Flow for Code Usage. The API Access feature allows you to export your flow from the platform and utilize it with your own code. This feature provides two different tabs within the platform, the first being the "Python API" tab and the second being the "Python Code" tab. Each tab offers a unique set of functionalities to integrate the exported flow into your codebase seamlessly.
 
 **Python API Tab:**
 
@@ -52,27 +48,23 @@ By utilizing the Python Code tab, you can seamlessly integrate the exported flow
 
 The API Access feature empowers you to leverage the full potential of your exported flow by seamlessly integrating it into your codebase. Whether you want to incorporate advanced conversational capabilities or automate specific tasks, this feature provides a flexible and efficient solution to enhance your conversational applications.
 
+---
+
 ### Import and Export
 
 Flows can be exported and imported as JSON files. We already have some examples on **Import** option, check them out.
 
-![Examples](img/examples.png)
 
 The **Export** option allows you to export your flow setting a name and description. You have the option to save the file with your API keys.
 
-
-
-|                                            Import                                            |                                            Export                                            |
-| :------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------: |
-| ![Chat](img/import.png) | ![Chat](img/export.png) |
-
+---
 
 ### Dark Mode and Notifications
 
 The background color can be set to dark 🌙 or light ☀️ mode. The bell icon 🔔 indicates that the component has a notification.
 
+---
+
 ## Chat
 
-A chat icon 💬 located in the bottom right corner of the screen allows you to chat. When you click over 💬 a new screen will pop up. You can start a conversation by typing in the text box and pressing enter. The chat will respond to your message. In the top right corner of the screen, you will see an eraser icon ![Eraser](img/eraser.png). Clicking on it will clear the chat history.
-
-![Chat](img/chat.png)
+A chat icon 💬 located in the bottom right corner of the screen allows you to chat. When you click over 💬 a new screen will pop up. You can start a conversation by typing in the text box and pressing enter. The chat will respond to your message. In the top right corner of the screen, you will see an eraser icon. Clicking on it will clear the chat history.
