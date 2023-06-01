@@ -21,6 +21,7 @@ so that more people can benefit from it.
   logs or tracebacks, you can wrap them in `<details>` and `</details>`. This
   [collapses the content](https://developer.mozilla.org/en/docs/Web/HTML/Element/details) so it only becomes visible on click, making the issue easier to read and follow.
 
+
 ## Issue labels
 
 [See this page](https://github.com/logspace-ai/langflow/labels) for an overview of the system we use to tag our issues and pull requests.
