@@ -227,7 +227,6 @@ html[data-theme='dark'] .header-github-link:before {
   padding: 0;
 }
 
-
 /* https://dev.to/sajclarke_62/using-tailwindcss-v3-in-docusaurus-in-5-steps-5c26 */
 @tailwind base;
 @tailwind components;
