@@ -3,6 +3,24 @@
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
+ :root {
+  --ifm-background-color: var(--token-primary-bg-c);
+  --ifm-navbar-link-hover-color: initial;
+  --ifm-navbar-padding-vertical: 0;
+  --ifm-navbar-item-padding-vertical: 0;
+  --ifm-font-family-base: -apple-system, BlinkMacSystemFont, Inter, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI emoji';
+  --ifm-font-family-monospace: 'SFMono-Regular', 'Roboto Mono', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+}
+
+/* :root {
+  --ifm-background-color: var(--token-primary-bg-c);
+  --ifm-navbar-link-hover-color: initial;
+  --ifm-navbar-padding-vertical: 0;
+  --ifm-navbar-item-padding-vertical: 0;
+  --ifm-font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  --ifm-font-family-monospace: 'Fira Code', 'Roboto Mono', 'Source Code Pro', Menlo, Monaco, Consolas, monospace;
+} */
+
 
 
  .theme-doc-sidebar-item-category.menu__list-item:not(:first-child) {
@@ -205,30 +223,3 @@ html[data-theme='dark'] .header-github-link:before {
 .image-rendering-pixel {
   image-rendering: pixelated;
 }
-
-/* Tailwindcss */
-
-#tailwind dd,
-#tailwind dt {
-  margin: 0;
-}
-
-#tailwind *,
-#tailwind ::before,
-#tailwind ::after {
-  border-width: 0;
-  border-style: solid;
-}
-
-#tailwind ol,
-#tailwind ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-/* https://dev.to/sajclarke_62/using-tailwindcss-v3-in-docusaurus-in-5-steps-5c26 */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
