@@ -10,7 +10,7 @@ Learn more about Multiple Vectorstores [here](https://python.langchain.com/en/la
 
 ![Multiple Vectorstores](img/multiple-vectorstores.png)
 
-`TextLoader` loads text from a file. Get the file used [here](https://github.com/hwchase17/chat-your-data/blob/master/state_of_the_union.txt)
+`TextLoader` loads text from a file. Get the file used [here](https://github.com/hwchase17/chat-your-data/blob/master/state_of_the_union.txt).
 
 By using `WebBaseLoader`, you can load all text from webpages into a document format that we can use downstream. Web path used:
 
