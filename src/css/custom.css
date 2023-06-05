@@ -223,3 +223,9 @@ html[data-theme='dark'] .header-github-link:before {
 .image-rendering-pixel {
   image-rendering: pixelated;
 }
+
+.img-center {
+  display: flex;
+  justify-content: center;
+  width: 100%,
+  }

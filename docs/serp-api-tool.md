@@ -1,3 +1,19 @@
 # Serp API Tool
 
+The Serp API (Search Engine Results Page API) is an API that allows developers to scrape search engine results from various search engines such as Google, Bing, Yahoo, and more.
+
+`Search` is a useful engine to answer questions about current events. To use the Serp API, you first need to sign up [Serp API](https://serpapi.com/) for an API key on the provider's website.
+
+Learn more about the Serp API [here](https://python.langchain.com/en/latest/modules/agents/tools/examples/google_serper.html).
+
+### ⛓️LangFlow example
+
 ![Serp API Tool](img/serp-api-tool.png)
+
+`ZeroShotPrompt` creates a prompt template for Zero-Shot Agent. You can set the _Prefix_ and _Suffix_. The _Prefix_ is the text before the input text. The _Suffix_ is the text after the input text. In the example, we used the _default_. You can find the _Format Instructions_ in the component for guidance.
+
+The `LLMChain` is a simple chain that takes in a prompt template, formats it with the user input, and returns the response from an LLM.
+
+`ZeroShotAgent` is an agent Agent for the MRKL chain. It uses a Zero Shot LLM to generate a response.
+
+For this example, we used [`OpenAI`](https://platform.openai.com/) as the LLM.

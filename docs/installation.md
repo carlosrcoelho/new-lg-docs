@@ -4,19 +4,19 @@
 
 You can install LangFlow from pip:
 
-```py
+```bash
 pip install langflow
 ```
 
 Next, run:
 
-```py
+```bash
 python -m langflow
 ```
 
 or
 
-```py
+```bash
 langflow
 ```
 

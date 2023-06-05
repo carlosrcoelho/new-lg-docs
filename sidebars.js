@@ -19,7 +19,7 @@ module.exports = {
       type: 'category',
       label: 'GCP Deployment',
       collapsed: false,
-      items: ['deploy-langflow-google-cloud-platform'],
+      items: ['gcp-deployment'],
     },
     {
       type: 'category',
