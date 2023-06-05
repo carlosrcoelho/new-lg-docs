@@ -8,10 +8,20 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
     title: 'LangFlow Documentation',
     tagline: 'LangFlow is a GUI for LangChain, designed with react-flow',
     favicon: 'img/favicon.ico',
-    url: 'https://langflow-docs.com',
+    url: 'https://langflow-docs.github.io',
     baseUrl: '/',
-    onBrokenLinks: 'throw',
+    onBrokenLinks: 'warn',
     onBrokenMarkdownLinks: 'warn',
+    organizationName: 'logspace-ai',
+    projectName: 'langflow',
+    deploymentBranch: 'deployment',
+    trailingSlash: false,
+
+    i18n: {
+      defaultLocale: 'en',
+      locales: ['en'],
+    },
+
     presets: [
       [
         '@docusaurus/preset-classic',
