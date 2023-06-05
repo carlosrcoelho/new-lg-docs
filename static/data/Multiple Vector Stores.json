@@ -1,0 +1,1441 @@
+{
+  "description": "An agent that selects which Vector Store to use based on the input",
+  "name": "Multiple Vector Stores",
+  "id": "2facc216-456d-447b-b597-1e9eab1d150b",
+  "data": {
+    "nodes": [
+      {
+        "width": 384,
+        "height": 597,
+        "id": "dndnode_9",
+        "type": "genericNode",
+        "position": {
+          "x": 1966.4599842017942,
+          "y": -869.5772971540586
+        },
+        "data": {
+          "type": "OpenAI",
+          "node": {
+            "template": {
+              "cache": {
+                "required": false,
+                "placeholder": "",
+                "show": false,
+                "multiline": false,
+                "password": false,
+                "name": "cache",
+                "advanced": false,
+                "type": "bool",
+                "list": false
+              },
+              "verbose": {
+                "required": false,
+                "placeholder": "",
+                "show": false,
+                "multiline": false,
+                "password": false,
+                "name": "verbose",
+                "advanced": false,
+                "type": "bool",
+                "list": false
+              },
+              "callbacks": {
+                "required": false,
+                "placeholder": "",
+                "show": false,
+                "multiline": false,
+                "password": false,
+                "name": "callbacks",
+                "advanced": false,
+                "type": "langchain.callbacks.base.BaseCallbackHandler",
+                "list": true
+              },
+              "client": {
+                "required": false,
+                "placeholder": "",
+                "show": false,
+                "multiline": false,
+                "password": false,
+                "name": "client",
+                "advanced": false,
+                "type": "Any",
+                "list": false
+              },
+              "model_name": {
+                "required": false,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "value": "text-davinci-003",
+                "password": false,
+                "options": [
+                  "text-davinci-003",
+                  "text-davinci-002",
+                  "text-curie-001",
+                  "text-babbage-001",
+                  "text-ada-001"
+                ],
+                "name": "model_name",
+                "advanced": false,
+                "type": "str",
+                "list": true
+              },
+              "temperature": {
+                "required": false,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "value": 0.7,
+                "password": false,
+                "name": "temperature",
+                "advanced": false,
+                "type": "float",
+                "list": false
+              },
+              "max_tokens": {
+                "required": false,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "value": 256,
+                "password": true,
+                "name": "max_tokens",
+                "advanced": false,
+                "type": "int",
+                "list": false
+              },
+              "top_p": {
+                "required": false,
+                "placeholder": "",
+                "show": false,
+                "multiline": false,
+                "value": 1,
+                "password": false,
+                "name": "top_p",
+                "advanced": false,
+                "type": "float",
+                "list": false
+              },
+              "frequency_penalty": {
+                "required": false,
+                "placeholder": "",
+                "show": false,
+                "multiline": false,
+                "value": 0,
+                "password": false,
+                "name": "frequency_penalty",
+                "advanced": false,
+                "type": "float",
+                "list": false
+              },
+              "presence_penalty": {
+                "required": false,
+                "placeholder": "",
+                "show": false,
+                "multiline": false,
+                "value": 0,
+                "password": false,
+                "name": "presence_penalty",
+                "advanced": false,
+                "type": "float",
+                "list": false
+              },
+              "n": {
+                "required": false,
+                "placeholder": "",
+                "show": false,
+                "multiline": false,
+                "value": 1,
+                "password": false,
+                "name": "n",
+                "advanced": false,
+                "type": "int",
+                "list": false
+              },
+              "best_of": {
+                "required": false,
+                "placeholder": "",
+                "show": false,
+                "multiline": false,
+                "value": 1,
+                "password": false,
+                "name": "best_of",
+                "advanced": false,
+                "type": "int",
+                "list": false
+              },
+              "model_kwargs": {
+                "required": false,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "password": false,
+                "name": "model_kwargs",
+                "advanced": true,
+                "type": "code",
+                "list": false
+              },
+              "openai_api_key": {
+                "required": false,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "value": "",
+                "password": true,
+                "name": "openai_api_key",
+                "display_name": "OpenAI API Key",
+                "advanced": false,
+                "type": "str",
+                "list": false
+              },
+              "openai_api_base": {
+                "required": false,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "password": true,
+                "name": "openai_api_base",
+                "display_name": "OpenAI API Base",
+                "advanced": false,
+                "type": "str",
+                "list": false,
+                "value": ""
+              },
+              "openai_organization": {
+                "required": false,
+                "placeholder": "",
+                "show": false,
+                "multiline": false,
+                "password": false,
+                "name": "openai_organization",
+                "display_name": "OpenAI Organization",
+                "advanced": false,
+                "type": "str",
+                "list": false
+              },
+              "openai_proxy": {
+                "required": false,
+                "placeholder": "",
+                "show": false,
+                "multiline": false,
+                "password": false,
+                "name": "openai_proxy",
+                "display_name": "OpenAI Proxy",
+                "advanced": false,
+                "type": "str",
+                "list": false
+              },
+              "batch_size": {
+                "required": false,
+                "placeholder": "",
+                "show": false,
+                "multiline": false,
+                "value": 20,
+                "password": false,
+                "name": "batch_size",
+                "advanced": false,
+                "type": "int",
+                "list": false
+              },
+              "request_timeout": {
+                "required": false,
+                "placeholder": "",
+                "show": false,
+                "multiline": false,
+                "password": false,
+                "name": "request_timeout",
+                "advanced": false,
+                "type": "float",
+                "list": false
+              },
+              "logit_bias": {
+                "required": false,
+                "placeholder": "",
+                "show": false,
+                "multiline": false,
+                "password": false,
+                "name": "logit_bias",
+                "advanced": false,
+                "type": "code",
+                "list": false
+              },
+              "max_retries": {
+                "required": false,
+                "placeholder": "",
+                "show": false,
+                "multiline": false,
+                "value": 6,
+                "password": false,
+                "name": "max_retries",
+                "advanced": false,
+                "type": "int",
+                "list": false
+              },
+              "streaming": {
+                "required": false,
+                "placeholder": "",
+                "show": false,
+                "multiline": false,
+                "value": false,
+                "password": false,
+                "name": "streaming",
+                "advanced": false,
+                "type": "bool",
+                "list": false
+              },
+              "allowed_special": {
+                "required": false,
+                "placeholder": "",
+                "show": false,
+                "multiline": false,
+                "value": [],
+                "password": false,
+                "name": "allowed_special",
+                "advanced": false,
+                "type": "Literal'all'",
+                "list": true
+              },
+              "disallowed_special": {
+                "required": false,
+                "placeholder": "",
+                "show": false,
+                "multiline": false,
+                "value": "all",
+                "password": false,
+                "name": "disallowed_special",
+                "advanced": false,
+                "type": "Literal'all'",
+                "list": false
+              },
+              "_type": "OpenAI"
+            },
+            "description": "Generic OpenAI class that uses model name.",
+            "base_classes": [
+              "BaseOpenAI",
+              "BaseLLM",
+              "OpenAI",
+              "BaseLanguageModel"
+            ]
+          },
+          "id": "dndnode_9",
+          "value": null
+        },
+        "selected": false,
+        "positionAbsolute": {
+          "x": 1966.4599842017942,
+          "y": -869.5772971540586
+        },
+        "dragging": false
+      },
+      {
+        "width": 384,
+        "height": 399,
+        "id": "dndnode_10",
+        "type": "genericNode",
+        "position": {
+          "x": 1453.8500764104347,
+          "y": -601.9573048787256
+        },
+        "data": {
+          "type": "VectorStoreInfo",
+          "node": {
+            "template": {
+              "vectorstore": {
+                "required": true,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "password": false,
+                "name": "vectorstore",
+                "advanced": false,
+                "type": "VectorStore",
+                "list": false
+              },
+              "name": {
+                "required": true,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "password": false,
+                "name": "name",
+                "advanced": false,
+                "type": "str",
+                "list": false
+              },
+              "description": {
+                "required": true,
+                "placeholder": "",
+                "show": true,
+                "multiline": true,
+                "password": false,
+                "name": "description",
+                "advanced": false,
+                "type": "str",
+                "list": false
+              },
+              "_type": "VectorStoreInfo"
+            },
+            "description": "Information about a vectorstore.",
+            "base_classes": [
+              "VectorStoreInfo"
+            ]
+          },
+          "id": "dndnode_10",
+          "value": null
+        },
+        "selected": false,
+        "positionAbsolute": {
+          "x": 1453.8500764104347,
+          "y": -601.9573048787256
+        },
+        "dragging": false
+      },
+      {
+        "width": 384,
+        "height": 293,
+        "id": "dndnode_12",
+        "type": "genericNode",
+        "position": {
+          "x": 4.768881258827719,
+          "y": -507.2598283898528
+        },
+        "data": {
+          "type": "WebBaseLoader",
+          "node": {
+            "template": {
+              "web_path": {
+                "required": true,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "value": "",
+                "password": false,
+                "name": "web_path",
+                "advanced": false,
+                "type": "str",
+                "list": false
+              },
+              "_type": "WebBaseLoader"
+            },
+            "description": "Loader that uses urllib and beautiful soup to load webpages.",
+            "base_classes": [
+              "WebBaseLoader",
+              "BaseLoader"
+            ]
+          },
+          "id": "dndnode_12",
+          "value": null
+        },
+        "selected": false,
+        "positionAbsolute": {
+          "x": 4.768881258827719,
+          "y": -507.2598283898528
+        },
+        "dragging": false
+      },
+      {
+        "width": 384,
+        "height": 267,
+        "id": "dndnode_16",
+        "type": "genericNode",
+        "position": {
+          "x": 2472.6895358833494,
+          "y": -1007.9446214062591
+        },
+        "data": {
+          "type": "VectorStoreRouterAgent",
+          "node": {
+            "template": {
+              "vectorstoreroutertoolkit": {
+                "required": true,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "password": false,
+                "name": "vectorstoreroutertoolkit",
+                "display_name": "Vector Store Router Toolkit",
+                "advanced": false,
+                "type": "VectorStoreRouterToolkit",
+                "list": false
+              },
+              "llm": {
+                "required": true,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "password": false,
+                "name": "llm",
+                "display_name": "LLM",
+                "advanced": false,
+                "type": "BaseLanguageModel",
+                "list": false
+              },
+              "_type": "vectorstorerouter_agent"
+            },
+            "description": "Construct an agent from a Vector Store Router.",
+            "base_classes": [
+              "AgentExecutor"
+            ]
+          },
+          "id": "dndnode_16",
+          "value": null
+        },
+        "selected": false,
+        "positionAbsolute": {
+          "x": 2472.6895358833494,
+          "y": -1007.9446214062591
+        },
+        "dragging": false
+      },
+      {
+        "width": 384,
+        "height": 227,
+        "id": "dndnode_17",
+        "type": "genericNode",
+        "position": {
+          "x": 1950.365974759041,
+          "y": -1187.9950390730755
+        },
+        "data": {
+          "type": "VectorStoreRouterToolkit",
+          "node": {
+            "template": {
+              "vectorstores": {
+                "required": true,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "password": false,
+                "name": "vectorstores",
+                "advanced": false,
+                "type": "VectorStoreInfo",
+                "list": true
+              },
+              "llm": {
+                "required": false,
+                "placeholder": "",
+                "show": false,
+                "multiline": false,
+                "password": false,
+                "name": "llm",
+                "advanced": false,
+                "type": "BaseLanguageModel",
+                "list": false
+              },
+              "_type": "VectorStoreRouterToolkit"
+            },
+            "description": "Toolkit for routing between vectorstores.",
+            "base_classes": [
+              "BaseToolkit",
+              "VectorStoreRouterToolkit"
+            ]
+          },
+          "id": "dndnode_17",
+          "value": null
+        },
+        "selected": false,
+        "positionAbsolute": {
+          "x": 1950.365974759041,
+          "y": -1187.9950390730755
+        },
+        "dragging": false
+      },
+      {
+        "width": 384,
+        "height": 399,
+        "id": "dndnode_18",
+        "type": "genericNode",
+        "position": {
+          "x": 1475.4953463167612,
+          "y": -1166.4344593839103
+        },
+        "data": {
+          "type": "VectorStoreInfo",
+          "node": {
+            "template": {
+              "vectorstore": {
+                "required": true,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "password": false,
+                "name": "vectorstore",
+                "advanced": false,
+                "type": "VectorStore",
+                "list": false
+              },
+              "name": {
+                "required": true,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "password": false,
+                "name": "name",
+                "advanced": false,
+                "type": "str",
+                "list": false
+              },
+              "description": {
+                "required": true,
+                "placeholder": "",
+                "show": true,
+                "multiline": true,
+                "password": false,
+                "name": "description",
+                "advanced": false,
+                "type": "str",
+                "list": false
+              },
+              "_type": "VectorStoreInfo"
+            },
+            "description": "Information about a vectorstore.",
+            "base_classes": [
+              "VectorStoreInfo"
+            ]
+          },
+          "id": "dndnode_18",
+          "value": null
+        },
+        "selected": false,
+        "positionAbsolute": {
+          "x": 1475.4953463167612,
+          "y": -1166.4344593839103
+        },
+        "dragging": false
+      },
+      {
+        "width": 384,
+        "height": 489,
+        "id": "dndnode_110",
+        "type": "genericNode",
+        "position": {
+          "x": 544.5729935080284,
+          "y": -1329.4137999041677
+        },
+        "data": {
+          "type": "CharacterTextSplitter",
+          "node": {
+            "template": {
+              "documents": {
+                "required": true,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "password": false,
+                "name": "documents",
+                "advanced": false,
+                "type": "BaseLoader",
+                "list": false
+              },
+              "separator": {
+                "required": true,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "value": ".",
+                "password": false,
+                "name": "separator",
+                "advanced": false,
+                "type": "str",
+                "list": false
+              },
+              "chunk_size": {
+                "required": true,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "value": 4000,
+                "password": false,
+                "name": "chunk_size",
+                "advanced": false,
+                "type": "int",
+                "list": false
+              },
+              "chunk_overlap": {
+                "required": true,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "value": 200,
+                "password": false,
+                "name": "chunk_overlap",
+                "advanced": false,
+                "type": "int",
+                "list": false
+              },
+              "_type": "CharacterTextSplitter"
+            },
+            "description": "Implementation of splitting text that looks at characters.",
+            "base_classes": [
+              "TextSplitter",
+              "CharacterTextSplitter"
+            ]
+          },
+          "id": "dndnode_110",
+          "value": null
+        },
+        "selected": false,
+        "positionAbsolute": {
+          "x": 544.5729935080284,
+          "y": -1329.4137999041677
+        },
+        "dragging": false
+      },
+      {
+        "width": 384,
+        "height": 489,
+        "id": "dndnode_117",
+        "type": "genericNode",
+        "position": {
+          "x": 455.39085931215675,
+          "y": -273.1977246363788
+        },
+        "data": {
+          "type": "CharacterTextSplitter",
+          "node": {
+            "template": {
+              "documents": {
+                "required": true,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "password": false,
+                "name": "documents",
+                "advanced": false,
+                "type": "BaseLoader",
+                "list": false
+              },
+              "separator": {
+                "required": true,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "value": ".",
+                "password": false,
+                "name": "separator",
+                "advanced": false,
+                "type": "str",
+                "list": false
+              },
+              "chunk_size": {
+                "required": true,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "value": 4000,
+                "password": false,
+                "name": "chunk_size",
+                "advanced": false,
+                "type": "int",
+                "list": false
+              },
+              "chunk_overlap": {
+                "required": true,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "value": 200,
+                "password": false,
+                "name": "chunk_overlap",
+                "advanced": false,
+                "type": "int",
+                "list": false
+              },
+              "_type": "CharacterTextSplitter"
+            },
+            "description": "Implementation of splitting text that looks at characters.",
+            "base_classes": [
+              "TextSplitter",
+              "CharacterTextSplitter"
+            ]
+          },
+          "id": "dndnode_117",
+          "value": null
+        },
+        "selected": false,
+        "positionAbsolute": {
+          "x": 455.39085931215675,
+          "y": -273.1977246363788
+        },
+        "dragging": false
+      },
+      {
+        "width": 384,
+        "height": 265,
+        "id": "dndnode_e543fef5-c303-4617-afdb-1e4351495576",
+        "type": "genericNode",
+        "position": {
+          "x": 30.83836620377508,
+          "y": -1284.2622844002963
+        },
+        "data": {
+          "type": "TextLoader",
+          "node": {
+            "template": {
+              "file_path": {
+                "required": true,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "value": "",
+                "suffixes": [
+                  ".txt"
+                ],
+                "password": false,
+                "name": "file_path",
+                "advanced": false,
+                "type": "file",
+                "list": false,
+                "fileTypes": [
+                  "txt"
+                ],
+                "content": null
+              },
+              "_type": "TextLoader"
+            },
+            "description": "Load text files.",
+            "base_classes": [
+              "TextLoader",
+              "BaseLoader"
+            ]
+          },
+          "id": "dndnode_e543fef5-c303-4617-afdb-1e4351495576",
+          "value": null
+        },
+        "selected": false,
+        "positionAbsolute": {
+          "x": 30.83836620377508,
+          "y": -1284.2622844002963
+        },
+        "dragging": false
+      },
+      {
+        "width": 384,
+        "height": 273,
+        "id": "dndnode_f6919ee8-c7d1-4bdc-a834-1b7949b7b9d3",
+        "type": "genericNode",
+        "position": {
+          "x": 512.838366203775,
+          "y": -728.2622844002965
+        },
+        "data": {
+          "type": "OpenAIEmbeddings",
+          "node": {
+            "template": {
+              "client": {
+                "required": false,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "password": false,
+                "name": "client",
+                "advanced": true,
+                "type": "Any",
+                "list": false
+              },
+              "model": {
+                "required": false,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "value": "text-embedding-ada-002",
+                "password": false,
+                "name": "model",
+                "advanced": true,
+                "type": "str",
+                "list": false
+              },
+              "deployment": {
+                "required": false,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "value": "text-embedding-ada-002",
+                "password": false,
+                "name": "deployment",
+                "advanced": true,
+                "type": "str",
+                "list": false
+              },
+              "openai_api_version": {
+                "required": false,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "password": true,
+                "name": "openai_api_version",
+                "display_name": "OpenAI API Version",
+                "advanced": true,
+                "type": "str",
+                "list": false,
+                "value": ""
+              },
+              "openai_api_base": {
+                "required": false,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "password": true,
+                "name": "openai_api_base",
+                "display_name": "OpenAI API Base",
+                "advanced": true,
+                "type": "str",
+                "list": false,
+                "value": ""
+              },
+              "openai_api_type": {
+                "required": false,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "password": true,
+                "name": "openai_api_type",
+                "display_name": "OpenAI API Type",
+                "advanced": true,
+                "type": "str",
+                "list": false,
+                "value": ""
+              },
+              "openai_proxy": {
+                "required": false,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "password": false,
+                "name": "openai_proxy",
+                "display_name": "OpenAI Proxy",
+                "advanced": true,
+                "type": "str",
+                "list": false
+              },
+              "embedding_ctx_length": {
+                "required": false,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "value": 8191,
+                "password": false,
+                "name": "embedding_ctx_length",
+                "advanced": true,
+                "type": "int",
+                "list": false
+              },
+              "openai_api_key": {
+                "required": false,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "value": "",
+                "password": true,
+                "name": "openai_api_key",
+                "display_name": "OpenAI API Key",
+                "advanced": false,
+                "type": "str",
+                "list": false
+              },
+              "openai_organization": {
+                "required": false,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "password": false,
+                "name": "openai_organization",
+                "display_name": "OpenAI Organization",
+                "advanced": true,
+                "type": "str",
+                "list": false
+              },
+              "allowed_special": {
+                "required": false,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "value": [],
+                "password": false,
+                "name": "allowed_special",
+                "advanced": true,
+                "type": "Literal'all'",
+                "list": true
+              },
+              "disallowed_special": {
+                "required": false,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "value": "all",
+                "password": false,
+                "name": "disallowed_special",
+                "advanced": true,
+                "type": "Literal'all'",
+                "list": true
+              },
+              "chunk_size": {
+                "required": false,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "value": 1000,
+                "password": false,
+                "name": "chunk_size",
+                "advanced": true,
+                "type": "int",
+                "list": false
+              },
+              "max_retries": {
+                "required": false,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "value": 6,
+                "password": false,
+                "name": "max_retries",
+                "advanced": true,
+                "type": "int",
+                "list": false
+              },
+              "request_timeout": {
+                "required": false,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "password": false,
+                "name": "request_timeout",
+                "advanced": true,
+                "type": "float",
+                "list": false
+              },
+              "headers": {
+                "required": false,
+                "placeholder": "",
+                "show": false,
+                "multiline": true,
+                "value": "{'Authorization':\n            'Bearer <token>'}",
+                "password": false,
+                "name": "headers",
+                "advanced": true,
+                "type": "Any",
+                "list": false
+              },
+              "_type": "OpenAIEmbeddings"
+            },
+            "description": "Wrapper around OpenAI embedding models.",
+            "base_classes": [
+              "OpenAIEmbeddings",
+              "Embeddings"
+            ]
+          },
+          "id": "dndnode_f6919ee8-c7d1-4bdc-a834-1b7949b7b9d3",
+          "value": null
+        },
+        "selected": false,
+        "positionAbsolute": {
+          "x": 512.838366203775,
+          "y": -728.2622844002965
+        },
+        "dragging": false
+      },
+      {
+        "width": 384,
+        "height": 353,
+        "id": "dndnode_e67bb6a1-73b2-41d1-b8e2-8b15d098347a",
+        "type": "genericNode",
+        "position": {
+          "x": 1002.8383662037747,
+          "y": -578.2622844002965
+        },
+        "data": {
+          "type": "Chroma",
+          "node": {
+            "template": {
+              "documents": {
+                "required": true,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "password": false,
+                "name": "documents",
+                "display_name": "Text Splitter",
+                "advanced": false,
+                "type": "TextSplitter",
+                "list": true
+              },
+              "embedding": {
+                "required": true,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "password": false,
+                "name": "embedding",
+                "display_name": "Embedding",
+                "advanced": false,
+                "type": "Embeddings",
+                "list": false
+              },
+              "metadatas": {
+                "required": false,
+                "placeholder": "",
+                "show": false,
+                "multiline": false,
+                "password": false,
+                "name": "metadatas",
+                "advanced": false,
+                "type": "code",
+                "list": true
+              },
+              "ids": {
+                "required": false,
+                "placeholder": "",
+                "show": false,
+                "multiline": false,
+                "password": false,
+                "name": "ids",
+                "advanced": false,
+                "type": "str",
+                "list": true
+              },
+              "collection_name": {
+                "required": false,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "value": "langchain",
+                "password": false,
+                "name": "collection_name",
+                "advanced": false,
+                "type": "str",
+                "list": false
+              },
+              "persist_directory": {
+                "required": false,
+                "placeholder": "",
+                "show": false,
+                "multiline": false,
+                "password": false,
+                "name": "persist_directory",
+                "advanced": false,
+                "type": "str",
+                "list": false
+              },
+              "client_settings": {
+                "required": false,
+                "placeholder": "",
+                "show": false,
+                "multiline": false,
+                "password": false,
+                "name": "client_settings",
+                "advanced": false,
+                "type": "chromadb.config.Setting",
+                "list": true
+              },
+              "client": {
+                "required": false,
+                "placeholder": "",
+                "show": false,
+                "multiline": false,
+                "password": false,
+                "name": "client",
+                "advanced": false,
+                "type": "chromadb.Client",
+                "list": false
+              },
+              "kwargs": {
+                "required": false,
+                "placeholder": "",
+                "show": false,
+                "multiline": false,
+                "password": false,
+                "name": "kwargs",
+                "advanced": true,
+                "type": "Any",
+                "list": false
+              },
+              "_type": "Chroma"
+            },
+            "description": "Create a Chroma vectorstore from a raw documents.",
+            "base_classes": [
+              "VectorStore",
+              "Chroma"
+            ]
+          },
+          "id": "dndnode_e67bb6a1-73b2-41d1-b8e2-8b15d098347a",
+          "value": null
+        },
+        "selected": false,
+        "positionAbsolute": {
+          "x": 1002.8383662037747,
+          "y": -578.2622844002965
+        },
+        "dragging": false
+      },
+      {
+        "width": 384,
+        "height": 353,
+        "id": "dndnode_9ff39aa3-378b-4f69-862c-b026ba94e853",
+        "type": "genericNode",
+        "position": {
+          "x": 1006.838366203775,
+          "y": -1186.2622844002963
+        },
+        "data": {
+          "type": "Chroma",
+          "node": {
+            "template": {
+              "documents": {
+                "required": true,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "password": false,
+                "name": "documents",
+                "display_name": "Text Splitter",
+                "advanced": false,
+                "type": "TextSplitter",
+                "list": true
+              },
+              "embedding": {
+                "required": true,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "password": false,
+                "name": "embedding",
+                "display_name": "Embedding",
+                "advanced": false,
+                "type": "Embeddings",
+                "list": false
+              },
+              "metadatas": {
+                "required": false,
+                "placeholder": "",
+                "show": false,
+                "multiline": false,
+                "password": false,
+                "name": "metadatas",
+                "advanced": false,
+                "type": "code",
+                "list": true
+              },
+              "ids": {
+                "required": false,
+                "placeholder": "",
+                "show": false,
+                "multiline": false,
+                "password": false,
+                "name": "ids",
+                "advanced": false,
+                "type": "str",
+                "list": true
+              },
+              "collection_name": {
+                "required": false,
+                "placeholder": "",
+                "show": true,
+                "multiline": false,
+                "value": "langchain",
+                "password": false,
+                "name": "collection_name",
+                "advanced": false,
+                "type": "str",
+                "list": false
+              },
+              "persist_directory": {
+                "required": false,
+                "placeholder": "",
+                "show": false,
+                "multiline": false,
+                "password": false,
+                "name": "persist_directory",
+                "advanced": false,
+                "type": "str",
+                "list": false
+              },
+              "client_settings": {
+                "required": false,
+                "placeholder": "",
+                "show": false,
+                "multiline": false,
+                "password": false,
+                "name": "client_settings",
+                "advanced": false,
+                "type": "chromadb.config.Setting",
+                "list": true
+              },
+              "client": {
+                "required": false,
+                "placeholder": "",
+                "show": false,
+                "multiline": false,
+                "password": false,
+                "name": "client",
+                "advanced": false,
+                "type": "chromadb.Client",
+                "list": false
+              },
+              "kwargs": {
+                "required": false,
+                "placeholder": "",
+                "show": false,
+                "multiline": false,
+                "password": false,
+                "name": "kwargs",
+                "advanced": true,
+                "type": "Any",
+                "list": false
+              },
+              "_type": "Chroma"
+            },
+            "description": "Create a Chroma vectorstore from a raw documents.",
+            "base_classes": [
+              "VectorStore",
+              "Chroma"
+            ]
+          },
+          "id": "dndnode_9ff39aa3-378b-4f69-862c-b026ba94e853",
+          "value": null
+        },
+        "selected": false,
+        "positionAbsolute": {
+          "x": 1006.838366203775,
+          "y": -1186.2622844002963
+        },
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "source": "dndnode_9",
+        "sourceHandle": "OpenAI|dndnode_9|BaseOpenAI|BaseLLM|OpenAI|BaseLanguageModel",
+        "target": "dndnode_16",
+        "targetHandle": "BaseLanguageModel|llm|dndnode_16",
+        "className": "animate-pulse",
+        "id": "reactflow__edge-dndnode_9OpenAI|dndnode_9|BaseOpenAI|BaseLLM|OpenAI|BaseLanguageModel-dndnode_16BaseLanguageModel|llm|dndnode_16",
+        "selected": false
+      },
+      {
+        "source": "dndnode_17",
+        "sourceHandle": "VectorStoreRouterToolkit|dndnode_17|BaseToolkit|VectorStoreRouterToolkit",
+        "target": "dndnode_16",
+        "targetHandle": "VectorStoreRouterToolkit|vectorstoreroutertoolkit|dndnode_16",
+        "className": "animate-pulse",
+        "id": "reactflow__edge-dndnode_17VectorStoreRouterToolkit|dndnode_17|BaseToolkit|VectorStoreRouterToolkit-dndnode_16VectorStoreRouterToolkit|vectorstoreroutertoolkit|dndnode_16",
+        "selected": false
+      },
+      {
+        "source": "dndnode_10",
+        "sourceHandle": "VectorStoreInfo|dndnode_10|VectorStoreInfo",
+        "target": "dndnode_17",
+        "targetHandle": "VectorStoreInfo|vectorstores|dndnode_17",
+        "className": "animate-pulse",
+        "id": "reactflow__edge-dndnode_10VectorStoreInfo|dndnode_10|VectorStoreInfo-dndnode_17VectorStoreInfo|vectorstores|dndnode_17",
+        "selected": false
+      },
+      {
+        "source": "dndnode_18",
+        "sourceHandle": "VectorStoreInfo|dndnode_18|VectorStoreInfo",
+        "target": "dndnode_17",
+        "targetHandle": "VectorStoreInfo|vectorstores|dndnode_17",
+        "className": "animate-pulse",
+        "id": "reactflow__edge-dndnode_18VectorStoreInfo|dndnode_18|VectorStoreInfo-dndnode_17VectorStoreInfo|vectorstores|dndnode_17",
+        "selected": false
+      },
+      {
+        "source": "dndnode_12",
+        "sourceHandle": "WebBaseLoader|dndnode_12|WebBaseLoader|BaseLoader",
+        "target": "dndnode_117",
+        "targetHandle": "BaseLoader|documents|dndnode_117",
+        "className": "animate-pulse",
+        "id": "reactflow__edge-dndnode_12WebBaseLoader|dndnode_12|WebBaseLoader|BaseLoader-dndnode_117BaseLoader|documents|dndnode_117",
+        "selected": false
+      },
+      {
+        "source": "dndnode_e543fef5-c303-4617-afdb-1e4351495576",
+        "sourceHandle": "TextLoader|dndnode_e543fef5-c303-4617-afdb-1e4351495576|TextLoader|BaseLoader",
+        "target": "dndnode_110",
+        "targetHandle": "BaseLoader|documents|dndnode_110",
+        "style": {
+          "stroke": "#222222"
+        },
+        "animated": false,
+        "id": "reactflow__edge-dndnode_e543fef5-c303-4617-afdb-1e4351495576TextLoader|dndnode_e543fef5-c303-4617-afdb-1e4351495576|TextLoader|BaseLoader-dndnode_110BaseLoader|documents|dndnode_110",
+        "selected": false
+      },
+      {
+        "source": "dndnode_f6919ee8-c7d1-4bdc-a834-1b7949b7b9d3",
+        "sourceHandle": "OpenAIEmbeddings|dndnode_f6919ee8-c7d1-4bdc-a834-1b7949b7b9d3|OpenAIEmbeddings|Embeddings",
+        "target": "dndnode_e67bb6a1-73b2-41d1-b8e2-8b15d098347a",
+        "targetHandle": "Embeddings|embedding|dndnode_e67bb6a1-73b2-41d1-b8e2-8b15d098347a",
+        "style": {
+          "stroke": "#222222"
+        },
+        "animated": false,
+        "id": "reactflow__edge-dndnode_f6919ee8-c7d1-4bdc-a834-1b7949b7b9d3OpenAIEmbeddings|dndnode_f6919ee8-c7d1-4bdc-a834-1b7949b7b9d3|OpenAIEmbeddings|Embeddings-dndnode_e67bb6a1-73b2-41d1-b8e2-8b15d098347aEmbeddings|embedding|dndnode_e67bb6a1-73b2-41d1-b8e2-8b15d098347a",
+        "selected": false
+      },
+      {
+        "source": "dndnode_117",
+        "sourceHandle": "CharacterTextSplitter|dndnode_117|TextSplitter|CharacterTextSplitter",
+        "target": "dndnode_e67bb6a1-73b2-41d1-b8e2-8b15d098347a",
+        "targetHandle": "TextSplitter|documents|dndnode_e67bb6a1-73b2-41d1-b8e2-8b15d098347a",
+        "style": {
+          "stroke": "#222222"
+        },
+        "animated": false,
+        "id": "reactflow__edge-dndnode_117CharacterTextSplitter|dndnode_117|TextSplitter|CharacterTextSplitter-dndnode_e67bb6a1-73b2-41d1-b8e2-8b15d098347aTextSplitter|documents|dndnode_e67bb6a1-73b2-41d1-b8e2-8b15d098347a",
+        "selected": false
+      },
+      {
+        "source": "dndnode_e67bb6a1-73b2-41d1-b8e2-8b15d098347a",
+        "sourceHandle": "Chroma|dndnode_e67bb6a1-73b2-41d1-b8e2-8b15d098347a|VectorStore|Chroma",
+        "target": "dndnode_10",
+        "targetHandle": "VectorStore|vectorstore|dndnode_10",
+        "style": {
+          "stroke": "#222222"
+        },
+        "animated": false,
+        "id": "reactflow__edge-dndnode_e67bb6a1-73b2-41d1-b8e2-8b15d098347aChroma|dndnode_e67bb6a1-73b2-41d1-b8e2-8b15d098347a|VectorStore|Chroma-dndnode_10VectorStore|vectorstore|dndnode_10",
+        "selected": false
+      },
+      {
+        "source": "dndnode_110",
+        "sourceHandle": "CharacterTextSplitter|dndnode_110|TextSplitter|CharacterTextSplitter",
+        "target": "dndnode_9ff39aa3-378b-4f69-862c-b026ba94e853",
+        "targetHandle": "TextSplitter|documents|dndnode_9ff39aa3-378b-4f69-862c-b026ba94e853",
+        "style": {
+          "stroke": "#222222"
+        },
+        "animated": false,
+        "id": "reactflow__edge-dndnode_110CharacterTextSplitter|dndnode_110|TextSplitter|CharacterTextSplitter-dndnode_9ff39aa3-378b-4f69-862c-b026ba94e853TextSplitter|documents|dndnode_9ff39aa3-378b-4f69-862c-b026ba94e853",
+        "selected": false
+      },
+      {
+        "source": "dndnode_f6919ee8-c7d1-4bdc-a834-1b7949b7b9d3",
+        "sourceHandle": "OpenAIEmbeddings|dndnode_f6919ee8-c7d1-4bdc-a834-1b7949b7b9d3|OpenAIEmbeddings|Embeddings",
+        "target": "dndnode_9ff39aa3-378b-4f69-862c-b026ba94e853",
+        "targetHandle": "Embeddings|embedding|dndnode_9ff39aa3-378b-4f69-862c-b026ba94e853",
+        "style": {
+          "stroke": "#222222"
+        },
+        "animated": false,
+        "id": "reactflow__edge-dndnode_f6919ee8-c7d1-4bdc-a834-1b7949b7b9d3OpenAIEmbeddings|dndnode_f6919ee8-c7d1-4bdc-a834-1b7949b7b9d3|OpenAIEmbeddings|Embeddings-dndnode_9ff39aa3-378b-4f69-862c-b026ba94e853Embeddings|embedding|dndnode_9ff39aa3-378b-4f69-862c-b026ba94e853",
+        "selected": false
+      },
+      {
+        "source": "dndnode_9ff39aa3-378b-4f69-862c-b026ba94e853",
+        "sourceHandle": "Chroma|dndnode_9ff39aa3-378b-4f69-862c-b026ba94e853|VectorStore|Chroma",
+        "target": "dndnode_18",
+        "targetHandle": "VectorStore|vectorstore|dndnode_18",
+        "style": {
+          "stroke": "#222222"
+        },
+        "animated": false,
+        "id": "reactflow__edge-dndnode_9ff39aa3-378b-4f69-862c-b026ba94e853Chroma|dndnode_9ff39aa3-378b-4f69-862c-b026ba94e853|VectorStore|Chroma-dndnode_18VectorStore|vectorstore|dndnode_18",
+        "selected": false
+      }
+    ],
+    "viewport": {
+      "x": 14.580816898112744,
+      "y": 706.1311422001484,
+      "zoom": 0.5
+    }
+  }
+}
