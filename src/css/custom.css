@@ -177,7 +177,7 @@ html[data-theme='dark'] #hero > div:first-child {
   font-family: var(--ifm-heading-font-family);
 }
 h1 {
-  font-size: 28px;
+  font-size: 26px;
 }
 h2 {
   font-size: 22px;
@@ -187,7 +187,7 @@ h3 {
 }
 
 body {
-  font-size: 17px;
+  font-size: 16px;
 }
 
 
