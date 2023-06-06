@@ -14,7 +14,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
     onBrokenMarkdownLinks: 'warn',
     organizationName: 'carlosrcoelho',
     projectName: 'langflow',
-    deploymentBranch: 'gh-pages',
+    deploymentBranch: 'deployment',
     trailingSlash: false,
 
     i18n: {
