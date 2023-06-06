@@ -4,7 +4,7 @@ module.exports = {
       type: 'category',
       label: 'Getting Started',
       collapsed: false,
-      items: ['index', 'installation', 'creating-flows', 'hugging-face-spaces', 'guidelines'],
+      items: ['index', 'installation', 'creating-flows', 'guidelines', 'hugging-face-spaces'],
     },
     {
       type: 'category',
