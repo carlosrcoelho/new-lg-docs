@@ -16,7 +16,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
     projectName: 'langflow',
     deploymentBranch: 'gh pages',
     trailingSlash: false,
-
+    customFields: {
+      mendableAnonKey: "b7f52734-297c-41dc-8737-edbd13196394",
+    },
     i18n: {
       defaultLocale: 'en',
       locales: ['en'],
@@ -39,6 +41,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       ],
     ],
     plugins:    [
+      ['docusaurus-node-polyfills', { excludeAliases: ['console'] }],
       'docusaurus-plugin-image-zoom',
       // ....
       async function myPlugin(context, options) {
