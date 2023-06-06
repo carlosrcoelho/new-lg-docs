@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 # Conversation Chain
 
-This is the simplest example of a `Conversation Chain`. It takes a message as input and returns a response. The response is generates by a language model (LLM).
+This is a simple example of a `Conversation Chain`. It takes a message as input and returns a response. The response is generates by a language model (LLM).
 
 Learn more about the Conversation Chain [here](https://python.langchain.com/en/latest/modules/memory/getting_started.html?highlight=ConversationChain#).
 
