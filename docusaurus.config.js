@@ -9,12 +9,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
     tagline: 'LangFlow is a GUI for LangChain, designed with react-flow',
     favicon: 'img/favicon.ico',
     url: 'https://langflow-docs.com',
-    baseUrl: 'langflow',
+    baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     organizationName: 'carlosrcoelho',
     projectName: 'langflow',
-    deploymentBranch: 'deployment',
+    deploymentBranch: 'gh pages',
     trailingSlash: false,
 
     i18n: {
