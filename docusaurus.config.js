@@ -8,20 +8,19 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
     title: 'LangFlow Documentation',
     tagline: 'LangFlow is a GUI for LangChain, designed with react-flow',
     favicon: 'img/favicon.ico',
-    url: 'https://langflow-docs.github.io',
-    baseUrl: '/',
-    onBrokenLinks: 'warn',
+    url: 'https://langflow-docs.com',
+    baseUrl: '/new-lg-docs/',
+    onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
-    organizationName: 'logspace-ai',
+    organizationName: 'carlosrcoelho',
     projectName: 'langflow',
-    deploymentBranch: 'deployment',
+    deploymentBranch: 'gh-pages',
     trailingSlash: false,
 
     i18n: {
       defaultLocale: 'en',
       locales: ['en'],
     },
-
     presets: [
       [
         '@docusaurus/preset-classic',
@@ -40,6 +39,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       ],
     ],
     plugins:    [
+      'docusaurus-plugin-image-zoom',
       // ....
       async function myPlugin(context, options) {
         return {
@@ -86,14 +86,22 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           disableSwitch: false,
           respectPrefersColorScheme: true,
         },
-        // announcementBar: {
-        //   content:
-        //     '⭐️ If you like LangFlow, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/logspace-ai/langflow">GitHub</a>! ⭐️',
-        //   },
+        announcementBar: {
+          content:
+            '⭐️ If you like ⛓️LangFlow, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/logspace-ai/langflow">GitHub</a>! ⭐️',
+          },
           footer: {
             links: [
             ],
             copyright: `Copyright © ${new Date().getFullYear()} Logspace.`,
+          },
+          zoom: {
+            selector: '.markdown :not(a) > img:not(.no-zoom)',
+            background: {
+              light: 'rgba(240, 240, 240, 0.9)',
+              dark: 'rgb(50, 50, 50, 0.9)',
+            },
+            config: {},
           },
           prism: {
             theme: lightCodeTheme,

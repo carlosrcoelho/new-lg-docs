@@ -8,6 +8,8 @@ Learn more about the JSON Agent [here](https://python.langchain.com/en/latest/mo
 
 ![JSON Agent](img/json-agent.png)
 
+ #### <a target="\_blank" href="json_files/JSON_Agent.json" download>Download Flow</a>
+
 `JsonSpec` will define the max value length of the input and output of the agent. For the path file you can get [here](https://raw.githubusercontent.com/openai/openai-openapi/master/openapi.yaml).
 
 *Max value length*:

@@ -10,6 +10,8 @@ Learn more about the Serp API [here](https://python.langchain.com/en/latest/modu
 
 ![Serp API Tool](img/serp-api-tool.png)
 
+ #### <a target="\_blank" href="json_files/SerpAPI_Tool.json" download>Download Flow</a>
+
 `ZeroShotPrompt` creates a prompt template for Zero-Shot Agent. You can set the _Prefix_ and _Suffix_. The _Prefix_ is the text before the input text. The _Suffix_ is the text after the input text. In the example, we used the _default_. You can find the _Format Instructions_ in the component for guidance.
 
 The `LLMChain` is a simple chain that takes in a prompt template, formats it with the user input, and returns the response from an LLM.

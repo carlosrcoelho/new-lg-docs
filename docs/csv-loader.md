@@ -2,6 +2,8 @@
 
 The `CSVLoader` loads a CSV file into a list of documents.
 
+[Download CSV](data/organizations-100.csv)
+
 Learn more about the CSV Loader [here](https://python.langchain.com/en/latest/modules/indexes/document_loaders/examples/csv.html?highlight=CSV%20loader).
 
 
@@ -9,7 +11,8 @@ Learn more about the CSV Loader [here](https://python.langchain.com/en/latest/mo
 
 ![CSV Loader](img/csv-loader.png)
 
-[Download CSV](data/organizations-100.csv)
+ #### <a target="\_blank" href="json_files/CSV_Loader.json" download>Download Flow</a>
+ 
 
 `CharacterTextSplitter` implements splitting text based on characters.
 

@@ -1,14 +1,20 @@
 # Multiple Vectorstores
 
-A vector store is a specialized database designed for the efficient storage of documents and their embeddings. It enables the retrieval of the most relevant documents for a given query by comparing the similarity of their embeddings to the query's embedding.
+A vector store agent collect data from a source, map the text to a vector space, store it in a vector database and search the vector database in natural language.
+
+<!-- A vector store is a specialized database designed for the efficient storage of documents and their embeddings. It enables the retrieval of the most relevant documents for a given query by comparing the similarity of their embeddings to the query's embedding. -->
 
 We can utilize the vector store to initialize an agent with multiple vector stores and leverage the agent for routing between them effortlessly.
 
 Learn more about Multiple Vectorstores [here](https://python.langchain.com/en/latest/modules/agents/toolkits/examples/vectorstore.html?highlight=Multiple%20Vector%20Stores#multiple-vectorstores).
 
+The flow shown below a working flow of a multiple vector store which is loading data from a URL and TXT file.
+
 ### ⛓️LangFlow example
 
 ![Multiple Vectorstores](img/multiple-vectorstores.png)
+
+ #### <a target="\_blank" href="json_files/Multiple_Vector_Stores.json" download>Download Flow</a>
 
 `TextLoader` loads text from a file. Get the file used [here](https://github.com/hwchase17/chat-your-data/blob/master/state_of_the_union.txt).
 

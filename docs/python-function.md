@@ -26,6 +26,8 @@ Learn more about Python Function [here](https://python.langchain.com/en/latest/m
 
 ![Python Function](img/python-function.png)
 
+ #### <a target="\_blank" href="json_files/Python_Function.json" download>Download Flow</a>
+
 A `Tool` is a way for an agent to interact with the function.
 
 *Name*:
