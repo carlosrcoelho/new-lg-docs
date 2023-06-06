@@ -10,11 +10,11 @@ Learn more about Multiple Vectorstores [here](https://python.langchain.com/en/la
 
 The flow shown below a working flow of a multiple vector store which is loading data from a URL and TXT file.
 
-### ⛓️LangFlow example
+## ⛓️LangFlow example
 
 ![Multiple Vectorstores](img/multiple-vectorstores.png)
 
- #### <a target="\_blank" href="json_files/Multiple_Vector_Stores.json" download>Download Flow</a>
+ ### <a target="\_blank" href="json_files/Multiple_Vector_Stores.json" download>Download Flow</a>
 
 `TextLoader` loads text from a file. Get the file used [here](https://github.com/hwchase17/chat-your-data/blob/master/state_of_the_union.txt).
 

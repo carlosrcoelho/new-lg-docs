@@ -92,6 +92,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         announcementBar: {
           content:
             '⭐️ If you like ⛓️LangFlow, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/logspace-ai/langflow">GitHub</a>! ⭐️',
+          backgroundColor: '#20232a',
+          textColor: '#fff',
+          isCloseable: true,
           },
           footer: {
             links: [

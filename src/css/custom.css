@@ -23,7 +23,7 @@
 
 
 
- .theme-doc-sidebar-item-category.menu__list-item:not(:first-child) {
+.theme-doc-sidebar-item-category.menu__list-item:not(:first-child) {
   margin-top: 1.5rem!important;
 }
 /* You can override the default Infima variables here. */
@@ -40,7 +40,7 @@
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
+/* [data-theme='dark'] {
   --ifm-color-primary: #2530c2;
   --ifm-color-primary-dark: #2530c2;
   --ifm-color-primary-darker: #2530c2;
@@ -60,7 +60,7 @@ html[data-theme='dark'] {
   --ifm-footer-background-color: #0a141c;
   --ifm-navbar-background-color: #21243d;
   --ifm-menu-color-background-active: #21243d;
-}
+} */
 
 .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.1);
@@ -176,6 +176,20 @@ html[data-theme='dark'] #hero > div:first-child {
   color: rgb(28, 30, 33);
   font-family: var(--ifm-heading-font-family);
 }
+h1 {
+  font-size: 28px;
+}
+h2 {
+  font-size: 22px;
+}
+h3 {
+  font-size: 18px;
+}
+
+body {
+  font-size: 17px;
+}
+
 
 html[data-theme='dark'] .hero-title {
   color: rgb(227, 227, 227);

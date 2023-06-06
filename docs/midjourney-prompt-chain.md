@@ -2,11 +2,11 @@
 
 With `MidJourney Prompt Chain`, you can use it to generate new MidJourney prompts. You can just type anything you like to build an image script.
 
-### ⛓️LangFlow example
+## ⛓️LangFlow example
 
 ![MidJourney Prompt Chain](img/midjourney-prompt-chain.png)
 
- #### <a target="\_blank" href="json_files/MidJourney_Prompt_Chain.json" download>Download Flow</a>
+ ### <a target="\_blank" href="json_files/MidJourney_Prompt_Chain.json" download>Download Flow</a>
 
 For example, you can type something like this:
 

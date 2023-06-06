@@ -7,11 +7,11 @@ The `CSVLoader` loads a CSV file into a list of documents.
 Learn more about the CSV Loader [here](https://python.langchain.com/en/latest/modules/indexes/document_loaders/examples/csv.html?highlight=CSV%20loader).
 
 
-### ⛓️LangFlow example
+## ⛓️LangFlow example
 
 ![CSV Loader](img/csv-loader.png)
 
- #### <a target="\_blank" href="json_files/CSV_Loader.json" download>Download Flow</a>
+ ### <a target="\_blank" href="json_files/CSV_Loader.json" download>Download Flow</a>
  
 
 `CharacterTextSplitter` implements splitting text based on characters.

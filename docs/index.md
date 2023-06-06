@@ -1,6 +1,4 @@
-# Welcome to LangFlow!
-
-# ⛓️ LangFlow
+# Welcome to ⛓️LangFlow!
 
 ~ A User Interface for LangChain 🦜🔗 ~
 

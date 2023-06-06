@@ -22,11 +22,11 @@ def is_brazilian_zipcode(zipcode: str) -> bool:
 ```
 Learn more about Python Function [here](https://python.langchain.com/en/latest/modules/agents/tools/custom_tools.html#using-the-tool-decorator).
 
-### ⛓️LangFlow example
+## ⛓️LangFlow example
 
 ![Python Function](img/python-function.png)
 
- #### <a target="\_blank" href="json_files/Python_Function.json" download>Download Flow</a>
+ ### <a target="\_blank" href="json_files/Python_Function.json" download>Download Flow</a>
 
 A `Tool` is a way for an agent to interact with the function.
 
