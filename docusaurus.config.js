@@ -74,7 +74,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
               href: 'https://github.com/logspace-ai/langflow',
               position: 'right',
               className: 'header-github-link',
-              // label: 'GitHub',
+              target: '_blank',
+              rel: null,
+            },
+            {
+              position: 'right',
+              href: 'https://twitter.com/logspace_ai',
+              position: 'right',
+              className: 'header-twitter-link',
               target: '_blank',
               rel: null,
             },
@@ -94,7 +101,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             '⭐️ If you like ⛓️LangFlow, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/logspace-ai/langflow">GitHub</a>! ⭐️',
           backgroundColor: '#2E2E2E', //Mustard Yellow #D19900 #D4B20B - Salmon #E9967A
           textColor: '#fff',
-          isCloseable: true,
+          isCloseable: false,
           },
           footer: {
             links: [

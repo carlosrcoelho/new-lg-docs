@@ -20,6 +20,22 @@
 
 We're constantly striving to improve our platform and provide you with the best tools and features. Stay tuned for more updates as we continue to evolve and meet your needs. Thank you for being a part of our journey! ✨🚀
 
+## v0.0.85
+
+### What's Changed
+* Fixes a bug when loading cookies by @anovazzi1 in https://github.com/logspace-ai/langflow/pull/455
+
+
+**Full Changelog**: https://github.com/logspace-ai/langflow/compare/v0.0.84...v0.0.85
+
+## v0.0.84
+
+### What's Changed
+* fix: validation now properly checks for null values by @ogabrielluiz in https://github.com/logspace-ai/langflow/pull/454
+
+
+**Full Changelog**: https://github.com/logspace-ai/langflow/compare/v0.0.83...v0.0.84
+
 ## v0.0.83
 
 ### What's Changed

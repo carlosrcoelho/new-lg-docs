@@ -12,27 +12,37 @@ Learn more about the components and how they work in the LangChain [documentatio
 
 ## Component's Features
 
-During the flow creation process, you will notice a colored circle next to the component. For example, if you select `ConversationChain` you will see an orange <span style={{color: 'orange'}}>o</span> and purple <span style={{color: 'purple'}}>o</span> circles. It means that this component accepts that type of connection.
+<div style={{ marginBottom: '20px' }}>
+  During the flow creation process, you will notice a colored circle next to the component. For example, if you select <code>ConversationChain</code>, you will see an orange <span style={{ color: 'orange' }}>o</span> and purple <span style={{ color: 'purple' }}>o</span> circles. It means that this component accepts that type of connection.
+</div>
 
-![Single Compenent](img/single-compenent.png)
+<div style={{ marginBottom: '20px', textAlign: 'center' }}>
+  <img src="img/single-compenent.png" alt="Single Compenent" style={{ width: '400px', display: 'block', marginLeft: 'auto', marginRight: 'auto' }} />
+</div>
 
+<div style={{ marginBottom: '20px' }}>
+  Components marked with a red asterisk <span style={{ color: 'red' }}>*</span> means that you must connect another component to make it work. If you don't, the icon ball close to the trash can icon 🗑️ will remain red. Make the necessary connections to make your flow work, and the icon ball will become green. Hovering over the small circle will reveal the component that needs to be connected.
+</div>
 
-
-Components marked with a red asterisk <span style={{color: 'red'}}>*</span> means that you must connect another component to make it work. If you don't, the icon ball close to the trash can icon 🗑️ will keep red. Make the necessary connections to make your flow work, and the icon ball will become green. Hovering over the small circle will reveal the component that needs to be connected.
-
-In some components, at the top of it, you will see a small gear icon ⚙️, which you can click to edit the parameters. You also have the option to delete it by clicking the trash can icon 🗑️.
-
+<div>
+  In some components, at the top of it, you will see a small gear icon ⚙️, which you can click to edit the parameters. You also have the option to delete it by clicking the trash can icon 🗑️.
+</div>
 
 
 ---
 
 ## Features
 
-In the top right corner of the screen, there are some features that you can use, such as **Code**, **Import**, **Export**, **Dark Mode**, and **Notification**, as you can see in the image below:
+<div style={{ marginBottom: '20px' }}>
+  In the top right corner of the screen, there are some features that you can use, such as <strong>Code</strong>, <strong>Import</strong>, <strong>Export</strong>, <strong>Dark Mode</strong>, and <strong>Notification</strong>, as you can see in the image below:
+</div>
 
-![Feature](img/features.png)
+<div style={{ marginBottom: '20px', textAlign: 'center' }}>
+  <img src="img/features.png" alt="Features" style={{ maxWidth: '100%', height: 'auto' }} />
+</div>
 
 Further down, we will explain each of these features.
+
 
 ---
 
