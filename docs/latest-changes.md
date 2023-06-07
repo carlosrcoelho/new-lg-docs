@@ -1,14 +1,41 @@
 # Latest Changes
 
-🪄Interface Updates
+🪄 Interface Updates
 
-💫New Components & Enhancements
+💫 New Components & Enhancements:
 
-⌨️Code Refactoring & Optimization
+ - Weaviate 🌐
 
-🐛A range of updates and bug fixes!
+ - Qdrant 🧊
+
+ - Faiss 🔍
+
+ - Hugging Face Embeddings 🤗
+  
+ - Llama.cpp 🦙
+
+⌨️ Code Refactoring & Optimization
+
+🐛 A range of updates and bug fixes!
 
 We're constantly striving to improve our platform and provide you with the best tools and features. Stay tuned for more updates as we continue to evolve and meet your needs. Thank you for being a part of our journey! ✨🚀
+
+## v0.0.83
+
+### What's Changed
+* 🔖 chore(pyproject.toml): bump up version to 0.0.83 by @ogabrielluiz in https://github.com/logspace-ai/langflow/pull/448
+
+
+**Full Changelog**: https://github.com/logspace-ai/langflow/compare/v0.0.82...v0.0.83
+
+## v0.0.82
+
+### What's Changed
+* build: public push and change branch by @deepankarm in https://github.com/logspace-ai/langflow/pull/444
+* Bump version to 0.0.82 by @ogabrielluiz in https://github.com/logspace-ai/langflow/pull/447
+
+
+**Full Changelog**: https://github.com/logspace-ai/langflow/compare/v0.0.81...v0.0.82
 
 ## v0.0.81
 
