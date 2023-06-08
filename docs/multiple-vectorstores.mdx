@@ -8,13 +8,28 @@ We can utilize the vector store to initialize an agent with multiple vector stor
 
 Learn more about Multiple Vectorstores [here](https://python.langchain.com/en/latest/modules/agents/toolkits/examples/vectorstore.html?highlight=Multiple%20Vector%20Stores#multiple-vectorstores).
 
-The flow shown below a working flow of a multiple vector store which is loading data from a URL and TXT file.
+The example shown below is a flow of multiple vectorstores. The data source here is a Wikipedia about Harry Potter and the State of the Union TXT file.
+
+When you build your flow, go to chat and type a query. Based on the data sources provided, the agent will search for the information you requested.
 
 ## ⛓️LangFlow example
 
-![Multiple Vectorstores](img/multiple-vectorstores.png)
+import ThemedImage from '@theme/ThemedImage';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import ZoomableImage from '/home/carlos/repo/new-lg-docs/src/ZoomableImage.js';
+
+
+<ZoomableImage
+  alt="Docusaurus themed image"
+  sources={{
+    light: 'img/multiple-vectorstores.png',
+    dark: 'img/multiple-vectorstores-dark.png',
+  }}
+/>
 
  ### <a target="\_blank" href="json_files/Multiple_Vector_Stores.json" download>Download Flow</a>
+
+ **Components used in this flow:**
 
 `TextLoader` loads text from a file. Get the file used [here](https://github.com/hwchase17/chat-your-data/blob/master/state_of_the_union.txt).
 
@@ -52,7 +67,7 @@ Text splitters operate as follows:
 200
 ```
 
-The `OpenAIEmbeddings`, wrapper around [OpenAI Embeddings](https://platform.openai.com/docs/guides/embeddings/what-are-embeddings) models. Make sure to get the API key from the LLM provider, in this case [OpenAI](https://platform.openai.com/).
+Embeddings are a way to represent words, phrases, or any entities in a vector space. In the example we used wrapper around [OpenAI Embeddings](https://platform.openai.com/docs/guides/embeddings/what-are-embeddings) models. Make sure to get the API key from the LLM provider, in this case [OpenAI](https://platform.openai.com/).
 
 `Chroma` vector databases can be used as vector stores to conduct a semantic search or to select examples, thanks to a wrapper around them.
 
@@ -85,5 +100,6 @@ Harry Potter Wikipedia.
 ```txt
 Wikipedia about Harry Potter.
 ```
+For this example, we used [`ChatOpenAI`](https://platform.openai.com/) as the LLM.
 
 `VectorStoreRouterAgent` construct an agent that routes between multiple vectorstores.

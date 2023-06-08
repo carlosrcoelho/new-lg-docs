@@ -6,12 +6,26 @@ The `CSVLoader` loads a CSV file into a list of documents.
 
 Learn more about the CSV Loader [here](https://python.langchain.com/en/latest/modules/indexes/document_loaders/examples/csv.html?highlight=CSV%20loader).
 
+In the example below, we load a CSV file containing the top 100 companies. After you build the flow, go to the chat and start questioning the data you have just loaded.
 
 ## ⛓️LangFlow example
 
-![CSV Loader](img/csv-loader.png)
+import ThemedImage from '@theme/ThemedImage';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import ZoomableImage from '/home/carlos/repo/new-lg-docs/src/ZoomableImage.js';
+
+
+<ZoomableImage
+  alt="Docusaurus themed image"
+  sources={{
+    light: 'img/csv-loader.png',
+    dark: 'img/csv-loader-dark.png',
+  }}
+/>
 
  ### <a target="\_blank" href="json_files/CSV_Loader.json" download>Download Flow</a>
+
+**Components used in this flow:**
  
 
 `CharacterTextSplitter` implements splitting text based on characters.
@@ -51,7 +65,7 @@ A `VectorStoreInfo` set information about the vector store, such as the name and
 *Name*:
 
 ```txt
-Top 100 companies
+Top 100 companies.
 ```
 
 *Description*:

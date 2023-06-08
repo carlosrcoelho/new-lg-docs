@@ -1,3 +1,7 @@
+import ThemedImage from '@theme/ThemedImage';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import ZoomableImage from '/home/carlos/repo/new-lg-docs/src/ZoomableImage.js';
+
 # Guidelines
 
 ## Component
@@ -16,8 +20,15 @@ Learn more about the components and how they work in the LangChain [documentatio
   During the flow creation process, you will notice a colored circle next to the component. For example, if you select <code>ConversationChain</code>, you will see an orange <span style={{ color: 'orange' }}>o</span> and purple <span style={{ color: 'purple' }}>o</span> circles. It means that this component accepts that type of connection.
 </div>
 
-<div style={{ marginBottom: '20px', textAlign: 'center' }}>
-  <img src="img/single-compenent.png" alt="Single Compenent" style={{ width: '400px', display: 'block', marginLeft: 'auto', marginRight: 'auto' }} />
+<div style={{ marginBottom: '20px', display: 'flex', justifyContent: 'center' }}>
+  <ZoomableImage
+    alt="Docusaurus themed image"
+    sources={{
+      light: useBaseUrl('img/single-compenent.png'),
+      dark: useBaseUrl('img/single-compenent-dark.png'),
+    }}
+    style={{ width: '100%', maxWidth: '800px', margin: '0 auto' }}
+  />
 </div>
 
 <div style={{ marginBottom: '20px' }}>
@@ -28,7 +39,6 @@ Learn more about the components and how they work in the LangChain [documentatio
   In some components, at the top of it, you will see a small gear icon ⚙️, which you can click to edit the parameters. You also have the option to delete it by clicking the trash can icon 🗑️.
 </div>
 
-
 ---
 
 ## Features
@@ -37,11 +47,20 @@ Learn more about the components and how they work in the LangChain [documentatio
   In the top right corner of the screen, there are some features that you can use, such as <strong>Code</strong>, <strong>Import</strong>, <strong>Export</strong>, <strong>Dark Mode</strong>, and <strong>Notification</strong>, as you can see in the image below:
 </div>
 
-<div style={{ marginBottom: '20px', textAlign: 'center' }}>
-  <img src="img/features.png" alt="Features" style={{ maxWidth: '100%', height: 'auto' }} />
+<div style={{ marginBottom: '20px', display: 'flex', justifyContent: 'center' }}>
+  <ZoomableImage
+    alt="Docusaurus themed image"
+    sources={{
+      light: useBaseUrl('img/features.png'),
+      dark: useBaseUrl('img/features-dark.png'),
+    }}
+    style={{ width: '100%', maxWidth: '800px', margin: '0 auto' }}
+  />
 </div>
 
+<div style={{ marginBottom: '20px' }}>
 Further down, we will explain each of these features.
+</div>
 
 
 ---
@@ -49,7 +68,6 @@ Further down, we will explain each of these features.
 ### Code
 
 The API Access feature allows you to export your flow from the platform and utilize it with your own code. You can use "Python API"  and "Python Code" as follow.
-
 
 **Python API Tab:**
 

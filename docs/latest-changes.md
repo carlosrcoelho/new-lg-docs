@@ -20,6 +20,14 @@
 
 We're constantly striving to improve our platform and provide you with the best tools and features. Stay tuned for more updates as we continue to evolve and meet your needs. Thank you for being a part of our journey! ✨🚀
 
+## v0.0.86
+
+### What's Changed
+* 🐛 fix(utils.py): add type check for streaming and stream attributes before setting them to True by @ogabrielluiz in https://github.com/logspace-ai/langflow/pull/457
+
+
+**Full Changelog**: https://github.com/logspace-ai/langflow/compare/v0.0.85...v0.0.86
+
 ## v0.0.85
 
 ### What's Changed

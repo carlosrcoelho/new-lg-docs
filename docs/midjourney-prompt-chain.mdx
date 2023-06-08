@@ -4,7 +4,18 @@ With `MidJourney Prompt Chain`, you can use it to generate new MidJourney prompt
 
 ## ⛓️LangFlow example
 
-![MidJourney Prompt Chain](img/midjourney-prompt-chain.png)
+import ThemedImage from '@theme/ThemedImage';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import ZoomableImage from '/home/carlos/repo/new-lg-docs/src/ZoomableImage.js';
+
+
+<ZoomableImage
+  alt="Docusaurus themed image"
+  sources={{
+    light: 'img/midjourney-prompt-chain.png',
+    dark: 'img/midjourney-prompt-chain-dark.png',
+  }}
+/>
 
  ### <a target="\_blank" href="json_files/MidJourney_Prompt_Chain.json" download>Download Flow</a>
 
@@ -21,4 +32,8 @@ Imagine a mysterious forest, the trees are tall and ancient, their branches reac
 ```
 Check out the image created by the prompt [here](https://www.bing.com/images/create/imagine-a-mysterious-forest2c-the-trees-are-tall-an/6440616907a941798a21294c224f089c?id=qCNeV4ysTxKW8xKfqsx4zg%3d%3d&view=detailv2&idpp=genimg&FORM=GCRIDP&mode=overlay).
 
-For this example, we used [`OpenAI`](https://platform.openai.com/) as the LLM.
+  **Components used in this flow:**
+
+As an LLM, we used `OpenAI` in this example.
+
+`Conversation Summary Memory` creates a summary of the conversation over time.

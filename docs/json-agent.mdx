@@ -4,11 +4,28 @@ The `JSON Agent` is an agent designed to interact with large JSON/dict objects.
 
 Learn more about the JSON Agent [here](https://python.langchain.com/en/latest/modules/agents/toolkits/examples/json.html).
 
+Agents can iteratively explore blobs to find the information they need to answer user questions.
+
+In the below example, we are using the OpenAPI spec for the OpenAI API.
+
 ## ⛓️LangFlow example
 
-![JSON Agent](img/json-agent.png)
+import ThemedImage from '@theme/ThemedImage';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import ZoomableImage from '/home/carlos/repo/new-lg-docs/src/ZoomableImage.js';
+
+
+<ZoomableImage
+  alt="Docusaurus themed image"
+  sources={{
+    light: 'img/json-agent.png',
+    dark: 'img/json-agent-dark.png',
+  }}
+/>
 
  ### <a target="\_blank" href="json_files/JSON_Agent.json" download>Download Flow</a>
+
+**Components used in this flow:**
 
 `JsonSpec` will define the max value length of the input and output of the agent. For the path file you can get [here](https://raw.githubusercontent.com/openai/openai-openapi/master/openapi.yaml).
 

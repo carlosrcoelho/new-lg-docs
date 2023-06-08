@@ -8,9 +8,21 @@ Learn more about the Serp API [here](https://python.langchain.com/en/latest/modu
 
 ## ⛓️LangFlow example
 
-![Serp API Tool](img/serp-api-tool.png)
+import ThemedImage from '@theme/ThemedImage';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import ZoomableImage from '/home/carlos/repo/new-lg-docs/src/ZoomableImage.js';
+
+<ZoomableImage
+  alt="Docusaurus themed image"
+  sources={{
+    light: 'img/serp-api-tool.png',
+    dark: 'img/serp-api-tool-dark.png',
+  }}
+/>
 
  ### <a target="\_blank" href="json_files/SerpAPI_Tool.json" download>Download Flow</a>
+
+**Components used in this flow:**
 
 `ZeroShotPrompt` creates a prompt template for Zero-Shot Agent. You can set the _Prefix_ and _Suffix_. The _Prefix_ is the text before the input text. The _Suffix_ is the text after the input text. In the example, we used the _default_. You can find the _Format Instructions_ in the component for guidance.
 
@@ -18,4 +30,4 @@ The `LLMChain` is a simple chain that takes in a prompt template, formats it wit
 
 `ZeroShotAgent` is an agent Agent for the MRKL chain. It uses a Zero Shot LLM to generate a response.
 
-For this example, we used [`OpenAI`](https://platform.openai.com/) as the LLM.
+For this example, we used [`ChatOpenAI`](https://platform.openai.com/) as the LLM.
