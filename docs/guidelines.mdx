@@ -6,18 +6,17 @@ import ZoomableImage from '/src/ZoomableImage.js';
 
 ## Component
 
-Components provide a convenient and straightforward way to work with language models.
+Components are the building blocks of the flows. They are made of inputs, outputs, and parameters that define their functionality, providing a convenient and straightforward way to compose LLM-based applications. Learn more about components and how they work in the LangChain [documentation](https://docs.langchain.com/docs/category/components) section.
 
-For example, component agents can refer to an entity capable of performing actions or making decisions autonomously or on behalf of someone or something else. 
 
-Learn more about the components and how they work in the LangChain [documentation](https://docs.langchain.com/docs/category/components) section.
-
----
-
-## Component's Features
+### Component's Features
 
 <div style={{ marginBottom: '20px' }}>
-  During the flow creation process, you will notice a colored circle next to the component. For example, if you select <code>ConversationChain</code>, you will see an orange <span style={{ color: 'orange' }}>o</span> and purple <span style={{ color: 'purple' }}>o</span> circles. It means that this component accepts that type of connection.
+  During the flow creation process, you will notice colored circles attached to one or both sides of a component. These
+  circles represent the availability to connect to other components, while the colors are type hints (hover over a circle to see details connection details).</div>
+
+<div style={{ marginBottom: '20px' }}>
+  For example, if you select a <code>ConversationChain</code> component, you will see orange  <span style={{ color: 'orange' }}>o</span>  and purple  <span style={{ color: 'purple' }}>o</span>  input circles. These circles are called Handles, and they indicate that this component accepts an LLM and a Memory component as inputs. The red asterisk <span style={{ color: 'red' }}>*</span> means that at least one input of that type is required.
 </div>
 
 <div style={{ marginBottom: '20px', display: 'flex', justifyContent: 'center' }}>
@@ -31,12 +30,14 @@ Learn more about the components and how they work in the LangChain [documentatio
   />
 </div>
 
+
 <div style={{ marginBottom: '20px' }}>
-  Components marked with a red asterisk <span style={{ color: 'red' }}>*</span> means that you must connect another component to make it work. If you don't, the icon ball close to the trash can icon 🗑️ will remain red. Make the necessary connections to make your flow work, and the icon ball will become green. Hovering over the small circle will reveal the component that needs to be connected.
+On the top right corner, you will find the Node Status icon 🔴. Make the necessary connections to make a flow work, and once the background validation is completed, the Node Status lights green 🟢. Hover over it to reveal the outputs going through a component in case of success or the detected error in case of failure.
 </div>
 
+
 <div>
-  In some components, at the top of it, you will see a small gear icon ⚙️, which you can click to edit the parameters. You also have the option to delete it by clicking the trash can icon 🗑️.
+  Use the gear icon ⚙️ to edit the component's parameters and delete it by clicking the trash can icon 🗑️.
 </div>
 
 ---
@@ -44,7 +45,7 @@ Learn more about the components and how they work in the LangChain [documentatio
 ## Features
 
 <div style={{ marginBottom: '20px' }}>
-  In the top right corner of the screen, there are some features that you can use, such as <strong>Code</strong>, <strong>Import</strong>, <strong>Export</strong>, <strong>Dark Mode</strong>, and <strong>Notification</strong>, as you can see in the image below:
+  On the top right corner of the screen, you will find options such as <strong>Code</strong>, <strong>Import</strong>, <strong>Export</strong>, <strong>Dark Mode</strong>, and <strong>Notifications</strong>, as displayed in the image below:
 </div>
 
 <div style={{ marginBottom: '20px', display: 'flex', justifyContent: 'center' }}>
@@ -59,15 +60,12 @@ Learn more about the components and how they work in the LangChain [documentatio
 </div>
 
 <div style={{ marginBottom: '20px' }}>
-Further down, we will explain each of these features.
+Further down, we will explain each of these options.
 </div>
-
-
----
 
 ### Code
 
-The API Access feature allows you to export your flow from the platform and utilize it with your own code. You can use "Python API"  and "Python Code" as follow.
+The Code button shows you code snippets to use the created flow as an API.
 
 **Python API Tab:**
 
@@ -91,7 +89,7 @@ print(predict("Your message"))
 
 **Python Code Tab:**
 
-You can load a flow from a JSON file and then applying the loaded flow to a given input text.
+Through the LangFlow package, you can load a flow from a JSON file and use it as a typical LangChain object.
 
 ```bash
 from langflow import load_flow_from_json
@@ -101,20 +99,14 @@ flow = load_flow_from_json("New Flow.json")
 flow("Hey, have you heard of LangFlow?")
 ```
 
----
-
 ### Import and Export
 
-Flows can be exported and imported as JSON files. We already have some examples on the **Import** option. Check them out.
+Flows can be exported and imported as JSON files. There are pre-build examples in the **Import** section. Check them out.
 
-The **Export** option allows you to export your created flow. Then you can set a name and description to it. You can select to save the file with your API keys or not.
-
-If you want to contribute, send us a pull request on our [GitHub langflow_examples](https://github.com/logspace-ai/langflow_examples) repo. Please make sure that your example follows the [LangFlow code of conduct](https://github.com/logspace-ai/langflow/blob/dev/CODE_OF_CONDUCT.md). If your example uses any third-party libraries or packages, please include them in your PR. 
-
-Additionally, you can opt for a dark 🌙 or light ☀️ background. The bell icon 🔔 indicates that the component has a notification.
+If you want to contribute with your own examples, send a pull request to the [GitHub langflow_examples](https://github.com/logspace-ai/langflow_examples) repo. Please ensure your example follows the [LangFlow code of conduct](https://github.com/logspace-ai/langflow/blob/dev/CODE_OF_CONDUCT.md). If your example uses any third-party libraries or packages, please include them in your PR.
 
 ---
 
 ## Chat
 
-A chat icon 💬 located in the bottom right corner of the screen allows you to chat. When you click over 💬 a new screen will pop up. You can start a conversation by typing in the text box and pressing enter. The chat will respond to your message. You will also see an eraser icon. Clicking on it will clear the chat history.
+Once a flow is appropriately validated, click the bottom right corner chat icon to start a conversation, where a screen will pop up. Use the eraser icon to clear the chat history and refresh the conversation.

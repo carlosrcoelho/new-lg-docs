@@ -98,8 +98,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         },
         announcementBar: {
           content:
-            '⭐️ If you like ⛓️LangFlow, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/logspace-ai/langflow">GitHub</a>! ⭐️',
-          backgroundColor: '#2E2E2E', //Mustard Yellow #D19900 #D4B20B - Salmon #E9967A
+            '⭐️ If you like ⛓️LangFlow, star it on <a target="_blank" rel="noopener noreferrer" href="https://github.com/logspace-ai/langflow">GitHub</a>! ⭐️',
+          backgroundColor: '#B53D38', //Mustard Yellow #D19900 #D4B20B - Salmon #E9967A
           textColor: '#fff',
           isCloseable: false,
           },
