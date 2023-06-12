@@ -1,14 +1,22 @@
 # CSV Loader
 
-The `CSVLoader` loads a CSV file into a list of documents.
+The `VectoStoreAgent` component retrieves information from one or more vector stores. This example shows a `VectoStoreAgent` connected to a CSV file through the `Chroma` vector store. Process description:
 
-[Download CSV](data/organizations-100.csv)
+- The `CSVLoader` loads a CSV file into a list of documents.
+- The extracted data is then processed by the `CharacterTextSplitter`, which splits the text into small, meaningful chunks (usually sentences).
+- These chunks feed the `Chroma` vector store, which converts them into vectors and stores them for fast indexing.
+- Finally, the agent accesses the information of the vector store through the `VectorStoreInfo` tool.
 
-Learn more about the CSV Loader [here](https://python.langchain.com/en/latest/modules/indexes/document_loaders/examples/csv.html?highlight=CSV%20loader).
+:::info
+The vector store is used for efficient semantic search, while `VectorStoreInfo` carries information about it, such as its name and description. Embeddings are a way to represent words, phrases, or any entities in a vector space. Learn more about them [here](https://platform.openai.com/docs/guides/embeddings/what-are-embeddings).
+:::
 
-In the example below, we load a CSV file containing the top 100 companies. After you build the flow, go to the chat and start questioning the data you have just loaded.
+:::tip
+Once you build this flow, ask questions about the data in the chat interface (e.g., number of rows or columns).
+:::
 
-## ⛓️LangFlow example
+
+## ⛓️ LangFlow Example
 
 import ThemedImage from '@theme/ThemedImage';
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -23,57 +31,10 @@ import ZoomableImage from '/src/ZoomableImage.js';
   }}
 />
 
- ### <a target="\_blank" href="json_files/CSV_Loader.json" download>Download Flow</a>
+ #### <a target="\_blank" href="json_files/CSV_Loader.json" download>Download Flow</a>
 
-**Components used in this flow:**
- 
+:::note LangChain Components 🦜🔗
+- [`CSVLoader`](https://python.langchain.com/en/latest/modules/indexes/document_loaders/examples/csv.html?highlight=CSV%20loader).
 
-`CharacterTextSplitter` implements splitting text based on characters.
 
-Text splitters operate as follows:
-
-- Split the text into small, meaningful chunks (usually sentences).
-
-- Combine these small chunks into larger ones until they reach a certain size (measured by a function).
-
-- Once a chunk reaches the desired size, make it its piece of text and create a new chunk with some overlap to maintain context.
-
-*Separator*:
-
-```txt
-.
-```
-
-*Chunk size*:
-
-```txt
-4000
-```
-
-*Chunk overlap*:
-
-```txt
-200
-```
-
-The `OpenAIEmbeddings`, wrapper around [OpenAI Embeddings](https://platform.openai.com/docs/guides/embeddings/what-are-embeddings) models. Make sure to get the API key from the LLM provider, in this case [OpenAI](https://platform.openai.com/).
-
-`Chroma` vector databases can be used as vector stores to conduct a semantic search or to select examples, thanks to a wrapper around them.
-
-A `VectorStoreInfo` set information about the vector store, such as the name and description.
-
-*Name*:
-
-```txt
-Top 100 companies.
-```
-
-*Description*:
-
-```txt
-The file contains top 100 companies.
-```
-
-The `VectoStoreAgent` is an agent designed to retrieve information from one or more vector stores, either with or without sources.
-
-For this example, we used [`OpenAI`](https://platform.openai.com/) as the LLM.
+:::

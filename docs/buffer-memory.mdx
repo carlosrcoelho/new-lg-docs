@@ -1,12 +1,8 @@
 # Buffer Memory
 
-The `Conversation Buffer Memory` stores messages and extracts them into variables.
+For certain applications, retaining past interactions is crucial. For that, chains and agents may accept a memory component as one of their input parameters. The `ConversationBufferMemory` component is one of them. It stores messages and extracts them into variables.
 
-When you open the chat and start a conversation, it will take the message as input and return a response. LLM generates the response, and the conversation message will be store in the Buffer Memory. 
-
-Learn more about the Buffer Memory [here](https://python.langchain.com/en/latest/modules/memory/types/buffer.html).
-
-## ⛓️LangFlow example
+## ⛓️ LangFlow Example
 
 import ThemedImage from '@theme/ThemedImage';
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -21,8 +17,10 @@ import ZoomableImage from '/src/ZoomableImage.js';
   }}
 />
 
- ### <a target="\_blank" href="json_files/Buffer_Memory.json" download>Download Flow</a>
+ #### <a target="\_blank" href="json_files/Buffer_Memory.json" download>Download Flow</a>
 
-  **Components used in this flow:**
+:::note LangChain Components 🦜🔗
+- [`ConversationBufferMemory`](https://python.langchain.com/en/latest/modules/memory/types/buffer.html)
 
-The LLM in this example is [`ChatOpenAI`](https://platform.openai.com/), and the chain is a `Conversation Chain`.
+
+:::

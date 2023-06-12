@@ -4,6 +4,26 @@
             "language": "plaintext",
             "scheme": "file",
             "pattern": "docs/guidelines.mdx"
+        },
+        {
+            "language": "plaintext",
+            "scheme": "file",
+            "pattern": "docs/csv-loader.mdx"
+        },
+        {
+            "language": "plaintext",
+            "scheme": "file",
+            "pattern": "docs/multiple-vectorstores.mdx"
+        },
+        {
+            "language": "plaintext",
+            "scheme": "file",
+            "pattern": "docs/python-function.mdx"
+        },
+        {
+            "language": "plaintext",
+            "scheme": "file",
+            "pattern": "docs/midjourney-prompt-chain.mdx"
         }
     ]
 }
