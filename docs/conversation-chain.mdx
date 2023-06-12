@@ -1,10 +1,13 @@
 # Conversation Chain
 
-This is a simple example of a `Conversation Chain`. It takes a message as input and returns a response. The response is generates by a language model (LLM).
+This example shows how to instantiate a simple `ConversationChain` component using a Language Model (LLM). Once the Node Status turns green 🟢, the chat will be ready to take in user messages. Here, we used `ChatOpenAI` to act as the required LLM input, but you can use any LLM for this purpose.
 
-Learn more about the Conversation Chain [here](https://python.langchain.com/en/latest/modules/memory/getting_started.html?highlight=ConversationChain#).
+:::info
+Make sure to always get the API key from the provider.
+:::
 
-## ⛓️LangFlow example
+
+## ⛓️ LangFlow Example
 
 import ThemedImage from '@theme/ThemedImage';
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -19,10 +22,10 @@ import ZoomableImage from '/src/ZoomableImage.js';
   }}
 />
 
+ #### <a target="\_blank" href="json_files/Basic_Chat.json" download>Download Flow</a>
+
+:::note LangChain Components 🦜🔗
+- [`ConversationChain`](https://python.langchain.com/en/latest/modules/memory/getting_started.html?highlight=ConversationChain#)
 
 
- ### <a target="\_blank" href="json_files/Basic_Chat.json" download>Download Flow</a>
-
- **Components used in this flow:**
-
-In the LangFlow example, we used ChatOpenAI as the LLM, but you can use any LLM that has an API. Make sure to get the API key from the LLM provider. For example, [ChatOpenAI](https://platform.openai.com/) requires you to create an account to get your API key.
+:::

@@ -1,8 +1,24 @@
 # MidJourney Prompt Chain
 
-With `MidJourney Prompt Chain`, you can use it to generate new MidJourney prompts. You can just type anything you like to build an image script.
+The `MidJourneyPromptChain` can be used to generate imaginative and detailed MidJourney prompts.
 
-## ⛓️LangFlow example
+For example, type something like:
+
+```bash
+Dragon
+```
+
+And get a response such as:
+
+```text
+Imagine a mysterious forest, the trees are tall and ancient, their branches reaching up to the sky. Through the darkness, a dragon emerges from the shadows, its scales shimmering in the moonlight. Its wingspan is immense, and its eyes glow with a fierce intensity. It is a majestic and powerful creature, one that commands both respect and fear.
+```
+
+:::tip
+Notice that the `ConversationSummaryMemory` stores a summary of the conversation over time. Try using it to create better prompts as the conversation goes on.
+:::
+
+## ⛓️ LangFlow Example
 
 import ThemedImage from '@theme/ThemedImage';
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -17,23 +33,8 @@ import ZoomableImage from '/src/ZoomableImage.js';
   }}
 />
 
- ### <a target="\_blank" href="json_files/MidJourney_Prompt_Chain.json" download>Download Flow</a>
+ #### <a target="\_blank" href="json_files/MidJourney_Prompt_Chain.json" download>Download Flow</a>
 
-For example, you can type something like this:
+:::note LangChain Components 🦜🔗
 
-```bash
-Dragon
-```
-
-Then, you have a response, something like this, in our case:
-
-```text
-Imagine a mysterious forest, the trees are tall and ancient, their branches reaching up to the sky. Through the darkness, a dragon emerges from the shadows, its scales shimmering in the moonlight. Its wingspan is immense, and its eyes glow with a fierce intensity. It is a majestic and powerful creature, one that commands both respect and fear.
-```
-Check out the image created by the prompt [here](https://www.bing.com/images/create/imagine-a-mysterious-forest2c-the-trees-are-tall-an/6440616907a941798a21294c224f089c?id=qCNeV4ysTxKW8xKfqsx4zg%3d%3d&view=detailv2&idpp=genimg&FORM=GCRIDP&mode=overlay).
-
-  **Components used in this flow:**
-
-As an LLM, we used `OpenAI` in this example.
-
-`Conversation Summary Memory` creates a summary of the conversation over time.
+:::

@@ -11,8 +11,8 @@ module.exports = {
       label: 'Examples',
       collapsed: false,
       items: [
-        'how-upload-examples', 'conversation-chain', 'buffer-memory','midjourney-prompt-chain',
-        'json-agent', 'csv-loader', 'serp-api-tool', 'multiple-vectorstores', 'python-function',
+        'conversation-chain', 'buffer-memory','midjourney-prompt-chain',
+        'csv-loader', 'serp-api-tool', 'multiple-vectorstores', 'python-function', 'how-upload-examples',
       ],
     },
     {
