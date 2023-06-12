@@ -1,4 +1,4 @@
-# Deploy Langflow on Jina AI Cloud
+# Deploy on Jina AI Cloud
 
 Langflow integrates with langchain-serve to provide a one-command deployment to [Jina AI Cloud](https://github.com/jina-ai/langchain-serve).
 

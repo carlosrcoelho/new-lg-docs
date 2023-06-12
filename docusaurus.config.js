@@ -1,5 +1,4 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 // With JSDoc @type annotations, IDEs can provide config autocompletion
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
@@ -65,7 +64,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           logo: {
             alt: 'LangFlow',
             src: 'img/chain.png',
-            srcDark: 'img/chain.png',
           },
           items: [
             // right
@@ -112,13 +110,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             selector: '.markdown :not(a) > img:not(.no-zoom)',
             background: {
               light: 'rgba(240, 240, 240, 0.9)',
-              dark: 'rgb(50, 50, 50, 0.9)',
             },
             config: {},
           },
           prism: {
             theme: lightCodeTheme,
-            darkTheme: darkCodeTheme,
           },
         }),
     }
