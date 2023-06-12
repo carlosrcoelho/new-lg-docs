@@ -1,0 +1,280 @@
+2023-06-09 16:10:44,767 - INFO - Logger set up with log level: 20(info)
+2023-06-09 16:10:44,770 - INFO - Log file: logs/langflow.log
+2023-06-09 16:11:55,645 - ERROR - 1005
+Traceback (most recent call last):
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/api/chat_manager.py", line 165, in handle_websocket
+    json_payload = await websocket.receive_json()
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/starlette/websockets.py", line 133, in receive_json
+    self._raise_on_disconnect(message)
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/starlette/websockets.py", line 105, in _raise_on_disconnect
+    raise WebSocketDisconnect(message["code"])
+starlette.websockets.WebSocketDisconnect: 1005
+2023-06-09 16:11:55,772 - ERROR - Cannot call "send" once a close message has been sent.
+Traceback (most recent call last):
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/api/chat_manager.py", line 165, in handle_websocket
+    json_payload = await websocket.receive_json()
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/starlette/websockets.py", line 133, in receive_json
+    self._raise_on_disconnect(message)
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/starlette/websockets.py", line 105, in _raise_on_disconnect
+    raise WebSocketDisconnect(message["code"])
+starlette.websockets.WebSocketDisconnect: 1005
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/api/chat_manager.py", line 181, in handle_websocket
+    await self.active_connections[client_id].close(
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/starlette/websockets.py", line 180, in close
+    await self.send(
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/starlette/websockets.py", line 85, in send
+    await self._send(message)
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 65, in sender
+    await send(message)
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/uvicorn/protocols/websockets/websockets_impl.py", line 329, in asgi_send
+    raise RuntimeError(msg % message_type)
+RuntimeError: Unexpected ASGI message 'websocket.close', after sending 'websocket.close'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/api/chat_manager.py", line 189, in handle_websocket
+    await connection.close(code=1000, reason="Client disconnected")
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/starlette/websockets.py", line 180, in close
+    await self.send(
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/starlette/websockets.py", line 87, in send
+    raise RuntimeError('Cannot call "send" once a close message has been sent.')
+RuntimeError: Cannot call "send" once a close message has been sent.
+2023-06-09 16:11:56,699 - ERROR - Node dndnode_5d659aba-f29c-4c70-94a4-136459bd5000 not found
+Traceback (most recent call last):
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_5d659aba-f29c-4c70-94a4-136459bd5000 not found
+2023-06-09 16:11:56,700 - ERROR - Node dndnode_678c0614-7610-411f-a53d-ee349df3f8a4 not found
+Traceback (most recent call last):
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_678c0614-7610-411f-a53d-ee349df3f8a4 not found
+2023-06-09 16:11:56,701 - ERROR - Node dndnode_a3f86c99-d06f-4870-8aef-1c43d6f54b1b not found
+Traceback (most recent call last):
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_a3f86c99-d06f-4870-8aef-1c43d6f54b1b not found
+2023-06-09 16:11:56,729 - ERROR - Node dndnode_4e868774-2696-4d2b-b149-fc2cf558ac9b not found
+Traceback (most recent call last):
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_4e868774-2696-4d2b-b149-fc2cf558ac9b not found
+2023-06-09 16:11:56,729 - ERROR - Node dndnode_f38fd476-81cc-4be6-9bea-538df9aec53e not found
+Traceback (most recent call last):
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_f38fd476-81cc-4be6-9bea-538df9aec53e not found
+2023-06-09 16:11:56,738 - ERROR - Node dndnode_96870489-9657-48f4-b3dd-211e71eb2ae0 not found
+Traceback (most recent call last):
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_96870489-9657-48f4-b3dd-211e71eb2ae0 not found
+2023-06-09 16:11:56,756 - ERROR - Node dndnode_bc22c250-c98e-4aad-80f6-97e9fc7a785f not found
+Traceback (most recent call last):
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_bc22c250-c98e-4aad-80f6-97e9fc7a785f not found
+2023-06-09 16:11:56,757 - ERROR - Node dndnode_77b75125-72b8-45a4-bacc-5d7cb16ad66e not found
+Traceback (most recent call last):
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_77b75125-72b8-45a4-bacc-5d7cb16ad66e not found
+2023-06-09 16:11:56,758 - ERROR - Node dndnode_8b8289a4-a7eb-486d-86fb-0e6207c8fc67 not found
+Traceback (most recent call last):
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_8b8289a4-a7eb-486d-86fb-0e6207c8fc67 not found
+2023-06-09 16:11:56,765 - ERROR - Node dndnode_46f16ca0-9755-4a4b-af00-63ba884bcd2c not found
+Traceback (most recent call last):
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_46f16ca0-9755-4a4b-af00-63ba884bcd2c not found
+2023-06-09 16:11:56,774 - ERROR - Node dndnode_d21cebcd-5633-4bed-8dea-e60a37e37381 not found
+Traceback (most recent call last):
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_d21cebcd-5633-4bed-8dea-e60a37e37381 not found
+2023-06-09 16:11:56,775 - ERROR - Node dndnode_f7a32c7d-c42f-43de-9932-6816c3ad8b87 not found
+Traceback (most recent call last):
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/api/validate.py", line 51, in post_validate_node
+    raise ValueError(f"Node {node_id} not found")
+ValueError: Node dndnode_f7a32c7d-c42f-43de-9932-6816c3ad8b87 not found
+2023-06-09 16:11:57,844 - ERROR - Error building node ChatOpenAI: 1 validation error for ChatOpenAI
+__root__
+  Did not find openai_api_key, please add an environment variable `OPENAI_API_KEY` which contains it, or pass  `openai_api_key` as a named parameter. (type=value_error)
+Traceback (most recent call last):
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/graph/base.py", line 195, in _build
+    self._built_object = loading.instantiate_class(
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/interface/loading.py", line 41, in instantiate_class
+    return instantiate_based_on_type(class_object, base_type, node_type, params)
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/interface/loading.py", line 83, in instantiate_based_on_type
+    return class_object(**params)
+  File "pydantic/main.py", line 341, in pydantic.main.BaseModel.__init__
+pydantic.error_wrappers.ValidationError: 1 validation error for ChatOpenAI
+__root__
+  Did not find openai_api_key, please add an environment variable `OPENAI_API_KEY` which contains it, or pass  `openai_api_key` as a named parameter. (type=value_error)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/api/validate.py", line 53, in post_validate_node
+    node.build()
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/graph/nodes.py", line 102, in build
+    self._build()
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/graph/base.py", line 160, in _build
+    result = value.build()
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/graph/nodes.py", line 123, in build
+    self._build()
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/graph/base.py", line 201, in _build
+    raise ValueError(
+ValueError: Error building node ChatOpenAI: 1 validation error for ChatOpenAI
+__root__
+  Did not find openai_api_key, please add an environment variable `OPENAI_API_KEY` which contains it, or pass  `openai_api_key` as a named parameter. (type=value_error)
+2023-06-09 16:11:57,846 - ERROR - Error building node ChatOpenAI: 1 validation error for ChatOpenAI
+__root__
+  Did not find openai_api_key, please add an environment variable `OPENAI_API_KEY` which contains it, or pass  `openai_api_key` as a named parameter. (type=value_error)
+Traceback (most recent call last):
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/graph/base.py", line 195, in _build
+    self._built_object = loading.instantiate_class(
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/interface/loading.py", line 41, in instantiate_class
+    return instantiate_based_on_type(class_object, base_type, node_type, params)
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/interface/loading.py", line 83, in instantiate_based_on_type
+    return class_object(**params)
+  File "pydantic/main.py", line 341, in pydantic.main.BaseModel.__init__
+pydantic.error_wrappers.ValidationError: 1 validation error for ChatOpenAI
+__root__
+  Did not find openai_api_key, please add an environment variable `OPENAI_API_KEY` which contains it, or pass  `openai_api_key` as a named parameter. (type=value_error)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/api/validate.py", line 53, in post_validate_node
+    node.build()
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/graph/nodes.py", line 123, in build
+    self._build()
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/graph/base.py", line 201, in _build
+    raise ValueError(
+ValueError: Error building node ChatOpenAI: 1 validation error for ChatOpenAI
+__root__
+  Did not find openai_api_key, please add an environment variable `OPENAI_API_KEY` which contains it, or pass  `openai_api_key` as a named parameter. (type=value_error)
+2023-06-09 16:12:02,087 - ERROR - Error building node ChatOpenAI: 1 validation error for ChatOpenAI
+__root__
+  Did not find openai_api_key, please add an environment variable `OPENAI_API_KEY` which contains it, or pass  `openai_api_key` as a named parameter. (type=value_error)
+Traceback (most recent call last):
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/graph/base.py", line 195, in _build
+    self._built_object = loading.instantiate_class(
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/interface/loading.py", line 41, in instantiate_class
+    return instantiate_based_on_type(class_object, base_type, node_type, params)
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/interface/loading.py", line 83, in instantiate_based_on_type
+    return class_object(**params)
+  File "pydantic/main.py", line 341, in pydantic.main.BaseModel.__init__
+pydantic.error_wrappers.ValidationError: 1 validation error for ChatOpenAI
+__root__
+  Did not find openai_api_key, please add an environment variable `OPENAI_API_KEY` which contains it, or pass  `openai_api_key` as a named parameter. (type=value_error)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/api/validate.py", line 53, in post_validate_node
+    node.build()
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/graph/nodes.py", line 102, in build
+    self._build()
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/graph/base.py", line 160, in _build
+    result = value.build()
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/graph/nodes.py", line 123, in build
+    self._build()
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/graph/base.py", line 201, in _build
+    raise ValueError(
+ValueError: Error building node ChatOpenAI: 1 validation error for ChatOpenAI
+__root__
+  Did not find openai_api_key, please add an environment variable `OPENAI_API_KEY` which contains it, or pass  `openai_api_key` as a named parameter. (type=value_error)
+2023-06-09 16:12:02,089 - ERROR - Error building node ChatOpenAI: 1 validation error for ChatOpenAI
+__root__
+  Did not find openai_api_key, please add an environment variable `OPENAI_API_KEY` which contains it, or pass  `openai_api_key` as a named parameter. (type=value_error)
+Traceback (most recent call last):
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/graph/base.py", line 195, in _build
+    self._built_object = loading.instantiate_class(
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/interface/loading.py", line 41, in instantiate_class
+    return instantiate_based_on_type(class_object, base_type, node_type, params)
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/interface/loading.py", line 83, in instantiate_based_on_type
+    return class_object(**params)
+  File "pydantic/main.py", line 341, in pydantic.main.BaseModel.__init__
+pydantic.error_wrappers.ValidationError: 1 validation error for ChatOpenAI
+__root__
+  Did not find openai_api_key, please add an environment variable `OPENAI_API_KEY` which contains it, or pass  `openai_api_key` as a named parameter. (type=value_error)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/api/validate.py", line 53, in post_validate_node
+    node.build()
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/graph/nodes.py", line 123, in build
+    self._build()
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/graph/base.py", line 201, in _build
+    raise ValueError(
+ValueError: Error building node ChatOpenAI: 1 validation error for ChatOpenAI
+__root__
+  Did not find openai_api_key, please add an environment variable `OPENAI_API_KEY` which contains it, or pass  `openai_api_key` as a named parameter. (type=value_error)
+2023-06-09 16:55:18,928 - ERROR - Error building node ChatOpenAI: 1 validation error for ChatOpenAI
+__root__
+  Did not find openai_api_key, please add an environment variable `OPENAI_API_KEY` which contains it, or pass  `openai_api_key` as a named parameter. (type=value_error)
+Traceback (most recent call last):
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/graph/base.py", line 195, in _build
+    self._built_object = loading.instantiate_class(
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/interface/loading.py", line 41, in instantiate_class
+    return instantiate_based_on_type(class_object, base_type, node_type, params)
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/interface/loading.py", line 83, in instantiate_based_on_type
+    return class_object(**params)
+  File "pydantic/main.py", line 341, in pydantic.main.BaseModel.__init__
+pydantic.error_wrappers.ValidationError: 1 validation error for ChatOpenAI
+__root__
+  Did not find openai_api_key, please add an environment variable `OPENAI_API_KEY` which contains it, or pass  `openai_api_key` as a named parameter. (type=value_error)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/api/validate.py", line 53, in post_validate_node
+    node.build()
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/graph/nodes.py", line 102, in build
+    self._build()
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/graph/base.py", line 160, in _build
+    result = value.build()
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/graph/nodes.py", line 123, in build
+    self._build()
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/graph/base.py", line 201, in _build
+    raise ValueError(
+ValueError: Error building node ChatOpenAI: 1 validation error for ChatOpenAI
+__root__
+  Did not find openai_api_key, please add an environment variable `OPENAI_API_KEY` which contains it, or pass  `openai_api_key` as a named parameter. (type=value_error)
+2023-06-09 16:55:18,932 - ERROR - Error building node ChatOpenAI: 1 validation error for ChatOpenAI
+__root__
+  Did not find openai_api_key, please add an environment variable `OPENAI_API_KEY` which contains it, or pass  `openai_api_key` as a named parameter. (type=value_error)
+Traceback (most recent call last):
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/graph/base.py", line 195, in _build
+    self._built_object = loading.instantiate_class(
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/interface/loading.py", line 41, in instantiate_class
+    return instantiate_based_on_type(class_object, base_type, node_type, params)
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/interface/loading.py", line 83, in instantiate_based_on_type
+    return class_object(**params)
+  File "pydantic/main.py", line 341, in pydantic.main.BaseModel.__init__
+pydantic.error_wrappers.ValidationError: 1 validation error for ChatOpenAI
+__root__
+  Did not find openai_api_key, please add an environment variable `OPENAI_API_KEY` which contains it, or pass  `openai_api_key` as a named parameter. (type=value_error)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/api/validate.py", line 53, in post_validate_node
+    node.build()
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/graph/nodes.py", line 123, in build
+    self._build()
+  File "/Users/rodrigonader/anaconda3/lib/python3.9/site-packages/langflow/graph/base.py", line 201, in _build
+    raise ValueError(
+ValueError: Error building node ChatOpenAI: 1 validation error for ChatOpenAI
+__root__
+  Did not find openai_api_key, please add an environment variable `OPENAI_API_KEY` which contains it, or pass  `openai_api_key` as a named parameter. (type=value_error)

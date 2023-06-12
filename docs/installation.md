@@ -1,4 +1,4 @@
-# How to install?
+# 📦 How to install?
 
 ## Installation
 
@@ -11,34 +11,36 @@ pip install langflow
 Next, run:
 
 ```bash
-python -m langflow
+langflow
 ```
+
 
 or
 
 ```bash
-langflow
+python -m langflow
 ```
+
 
 ---
 
 ## Run Locally
 
-Run locally by cloning the repository and installing the dependencies. We recommend using a virtual environment to isolate the dependencies from your system.
+LangFlow can run locally by cloning the repository and installing the dependencies. We recommend using a virtual environment to isolate the dependencies from your system.
 
 Before you start, make sure you have the following installed:
 
 - Poetry
 - Node.js
 
-For the backend, you will need to install the dependencies and start the development server.
+Then install the dependencies and start the development server for the backend:
 
 ```bash
 poetry install
 make run_backend
 ```
 
-For the frontend, you will need to install the dependencies and start the development server.
+And the frontend:
 
 ```bash
 cd src/frontend
@@ -50,7 +52,7 @@ npm start
 
 ## Docker compose
 
-This will run the backend and frontend in separate containers. The frontend will be available at `localhost:3000` and the backend at `localhost:7860`.
+The following snippet will run the backend and frontend in separate containers. The frontend will be available at `localhost:3000` and the backend at `localhost:7860`.
 
 ```bash
 docker compose up --build
