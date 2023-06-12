@@ -93,7 +93,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         },
         colorMode: {
           defaultMode: 'light',
-          disableSwitch: false,
+          disableSwitch: true,
           respectPrefersColorScheme: true,
         },
         announcementBar: {
