@@ -1,4 +1,4 @@
-# Deploy Langflow on Google Cloud Platform
+# Deploy on Google Cloud Platform
 
 ## Run Langflow from a New Google Cloud Project
 

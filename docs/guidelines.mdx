@@ -1,7 +1,3 @@
-import ThemedImage from '@theme/ThemedImage';
-import useBaseUrl from '@docusaurus/useBaseUrl';
-import ZoomableImage from '/src/ZoomableImage.js';
-
 # Guidelines
 
 ## Component
@@ -19,12 +15,15 @@ Components are the building blocks of the flows. They are made of inputs, output
   For example, if you select a <code>ConversationChain</code> component, you will see orange  <span style={{ color: 'orange' }}>o</span>  and purple  <span style={{ color: 'purple' }}>o</span>  input circles. These circles are called Handles, and they indicate that this component accepts an LLM and a Memory component as inputs. The red asterisk <span style={{ color: 'red' }}>*</span> means that at least one input of that type is required.
 </div>
 
+import ThemedImage from '@theme/ThemedImage';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import ZoomableImage from '/src/theme/ZoomableImage.js';
+
 <div style={{ marginBottom: '20px', display: 'flex', justifyContent: 'center' }}>
   <ZoomableImage
     alt="Docusaurus themed image"
     sources={{
       light: useBaseUrl('img/single-compenent.png'),
-      dark: useBaseUrl('img/single-compenent-dark.png'),
     }}
     style={{ width: '100%', maxWidth: '800px', margin: '0 auto' }}
   />
@@ -53,7 +52,6 @@ On the top right corner, you will find the Node Status icon 🔴. Make the neces
     alt="Docusaurus themed image"
     sources={{
       light: useBaseUrl('img/features.png'),
-      dark: useBaseUrl('img/features-dark.png'),
     }}
     style={{ width: '100%', maxWidth: '800px', margin: '0 auto' }}
   />
