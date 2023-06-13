@@ -2,7 +2,19 @@
 
 Creating flows with LangFlow is easy. Simply drag sidebar components onto the canvas and connect them together to create your pipeline. LangFlow provides a range of [LangChain components](https://langchain.readthedocs.io/en/latest/reference.html) to choose from, including LLMs, prompt serializers, agents, and chains.
 
-![Example](/img/overall.png)
+import ThemedImage from '@theme/ThemedImage';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import ZoomableImage from '/src/theme/ZoomableImage.js';
+
+<div style={{ marginBottom: '20px', display: 'flex', justifyContent: 'center' }}>
+<ZoomableImage
+  alt="Docusaurus themed image"
+  sources={{
+    light: 'img/overall.png',
+  }}
+    style={{ width: '100%', maxWidth: '800px', margin: '0 auto' }}
+  />
+</div>
 
 Once done, you can export your flow as a JSON file by clicking the "Export" button in the top right corner of the canvas. Then, load the flow in Python with:
 

@@ -89,6 +89,11 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
           minHeadingLevel: 2,
           maxHeadingLevel: 5,
         },
+        colorMode: {
+          defaultMode: 'light',
+          disableSwitch: true,
+          respectPrefersColorScheme: true,
+        },
         announcementBar: {
           content:
             '⭐️ If you like ⛓️LangFlow, star it on <a target="_blank" rel="noopener noreferrer" href="https://github.com/logspace-ai/langflow">GitHub</a>! ⭐️',
